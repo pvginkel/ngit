@@ -63,8 +63,8 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html"
-	/// *      >Git documentation about Status</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html"
+	/// >Git documentation about Status</a></seealso>
 	public class StatusCommand : GitCommand<Status>
 	{
 		private WorkingTreeIterator workingTreeIt;

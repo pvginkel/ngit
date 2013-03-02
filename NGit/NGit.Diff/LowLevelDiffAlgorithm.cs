@@ -77,7 +77,6 @@ namespace NGit.Diff
 		/// <see cref="Subsequence{S}">Subsequence&lt;S&gt;</see>
 		/// s.
 		/// </remarks>
-		/// <?></?>
 		/// <param name="edits">result list to append the region's edits onto.</param>
 		/// <param name="cmp">the comparator supplying the element equivalence function.</param>
 		/// <param name="a">

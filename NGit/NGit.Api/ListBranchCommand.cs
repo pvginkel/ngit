@@ -53,8 +53,8 @@ namespace NGit.Api
 	/// <summary>Used to obtain a list of branches.</summary>
 	/// <remarks>Used to obtain a list of branches.</remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
-	/// *      >Git documentation about Branch</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
+	/// >Git documentation about Branch</a></seealso>
 	public class ListBranchCommand : GitCommand<IList<Ref>>
 	{
 		private ListBranchCommand.ListMode listMode = ListMode.ALL;

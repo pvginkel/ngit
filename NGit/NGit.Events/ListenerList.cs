@@ -90,7 +90,6 @@ namespace NGit.Events
 
 		/// <summary>Add a listener to the list.</summary>
 		/// <remarks>Add a listener to the list.</remarks>
-		/// <?></?>
 		/// <param name="type">type of listener being registered.</param>
 		/// <param name="listener">the listener instance.</param>
 		/// <returns>a handle to later remove the registration, if desired.</returns>
@@ -105,7 +104,7 @@ namespace NGit.Events
 		/// <summary>Dispatch an event to all interested listeners.</summary>
 		/// <remarks>
 		/// Dispatch an event to all interested listeners.
-		/// <p>
+		/// <p/>
 		/// Listeners are selected by the type of listener the event delivers to.
 		/// </remarks>
 		/// <param name="event">the event to deliver.</param>

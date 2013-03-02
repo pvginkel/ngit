@@ -361,11 +361,12 @@ namespace NGit.Merge
 		/// operation. But the merge commit should not accidentally contain
 		/// modifications done before the merge. Check the &lt;a href=
 		/// "http://www.kernel.org/pub/software/scm/git/docs/git-read-tree.html#_3_way_merge"
-		/// &gt;git read-tree</a> documentation for further explanations.</li>
+		/// &gt;git read-tree&lt;/a&gt; documentation for further explanations.</li>
 		/// <li>A conflict was detected and the working-tree file is dirty. When a
 		/// conflict is detected the content-merge algorithm will try to write a
 		/// merged version into the working-tree. If the file is dirty we would
 		/// override unsaved data.</li>
+		/// </ul>
 		/// </remarks>
 		/// <param name="base">the common base for ours and theirs</param>
 		/// <param name="ours">
@@ -970,7 +971,7 @@ namespace NGit.Merge
 		/// Sets the WorkingTreeIterator to be used by this merger. If no
 		/// WorkingTreeIterator is set this merger will ignore the working tree and
 		/// fail if a content merge is necessary.
-		/// <p>
+		/// <p/>
 		/// TODO: enhance WorkingTreeIterator to support write operations. Then this
 		/// merger will be able to merge with a different working tree abstraction.
 		/// </remarks>

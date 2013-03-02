@@ -50,7 +50,7 @@ namespace NGit.Diff
 	/// Wraps a
 	/// <see cref="Sequence">Sequence</see>
 	/// to have a narrower range of elements.
-	/// <p>
+	/// <p/>
 	/// This sequence acts as a proxy for the real sequence, translating element
 	/// indexes on the fly by adding
 	/// <code>begin</code>
@@ -59,12 +59,10 @@ namespace NGit.Diff
 	/// <see cref="SubsequenceComparator{S}">SubsequenceComparator&lt;S&gt;</see>
 	/// .
 	/// </summary>
-	/// <?></?>
 	public sealed class Subsequence<S> : Sequence where S:Sequence
 	{
 		/// <summary>Construct a subsequence around the A region/base sequence.</summary>
 		/// <remarks>Construct a subsequence around the A region/base sequence.</remarks>
-		/// <?></?>
 		/// <param name="a">the A sequence.</param>
 		/// <param name="region">
 		/// the region of
@@ -85,7 +83,6 @@ namespace NGit.Diff
 
 		/// <summary>Construct a subsequence around the B region/base sequence.</summary>
 		/// <remarks>Construct a subsequence around the B region/base sequence.</remarks>
-		/// <?></?>
 		/// <param name="b">the B sequence.</param>
 		/// <param name="region">
 		/// the region of
@@ -106,7 +103,6 @@ namespace NGit.Diff
 
 		/// <summary>Adjust the Edit to reflect positions in the base sequence.</summary>
 		/// <remarks>Adjust the Edit to reflect positions in the base sequence.</remarks>
-		/// <?></?>
 		/// <param name="e">
 		/// edit to adjust in-place. Prior to invocation the indexes are
 		/// in terms of the two subsequences; after invocation the indexes
@@ -125,7 +121,6 @@ namespace NGit.Diff
 
 		/// <summary>Adjust the Edits to reflect positions in the base sequence.</summary>
 		/// <remarks>Adjust the Edits to reflect positions in the base sequence.</remarks>
-		/// <?></?>
 		/// <param name="edits">
 		/// edits to adjust in-place. Prior to invocation the indexes are
 		/// in terms of the two subsequences; after invocation the indexes

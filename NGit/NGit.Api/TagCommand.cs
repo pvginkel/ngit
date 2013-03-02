@@ -62,7 +62,7 @@ namespace NGit.Api
 	/// to finally execute the command.
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html"
-	/// *      >Git documentation about Tag</a></seealso>
+	/// >Git documentation about Tag</a></seealso>
 	public class TagCommand : GitCommand<Ref>
 	{
 		private RevObject id;

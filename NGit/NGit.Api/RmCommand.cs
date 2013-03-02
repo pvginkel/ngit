@@ -67,7 +67,7 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-rm.html"
-	/// *      >Git documentation about Rm</a></seealso>
+	/// >Git documentation about Rm</a></seealso>
 	public class RmCommand : GitCommand<DirCache>
 	{
 		private ICollection<string> filepatterns;

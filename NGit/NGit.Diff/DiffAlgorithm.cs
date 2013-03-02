@@ -53,7 +53,7 @@ namespace NGit.Diff
 	/// s to create an
 	/// <see cref="EditList">EditList</see>
 	/// of changes.
-	/// <p>
+	/// <p/>
 	/// An algorithm's
 	/// <code>diff</code>
 	/// method must be callable from concurrent threads
@@ -99,7 +99,6 @@ namespace NGit.Diff
 
 		/// <summary>Compare two sequences and identify a list of edits between them.</summary>
 		/// <remarks>Compare two sequences and identify a list of edits between them.</remarks>
-		/// <?></?>
 		/// <param name="cmp">the comparator supplying the element equivalence function.</param>
 		/// <param name="a">
 		/// the first (also known as old or pre-image) sequence. Edits
@@ -192,7 +191,6 @@ namespace NGit.Diff
 		/// <see cref="Subsequence{S}">Subsequence&lt;S&gt;</see>
 		/// s.
 		/// </remarks>
-		/// <?></?>
 		/// <param name="cmp">the comparator supplying the element equivalence function.</param>
 		/// <param name="a">
 		/// the first (also known as old or pre-image) sequence. Edits

@@ -62,7 +62,6 @@ namespace NGit.Junit
 {
 	/// <summary>Wrapper to make creating test data easier.</summary>
 	/// <remarks>Wrapper to make creating test data easier.</remarks>
-	/// <?></?>
 	public interface TestRepository
 	{
 		DirCacheEntry File(string path, RevBlob blob);
@@ -287,7 +286,7 @@ namespace NGit.Junit
 		/// <summary>Create a new commit.</summary>
 		/// <remarks>
 		/// Create a new commit.
-		/// <p>
+		/// <p/>
 		/// See
 		/// <see cref="TestRepository{R}.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
 		/// 	">TestRepository&lt;R&gt;.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
@@ -306,7 +305,7 @@ namespace NGit.Junit
 		/// <summary>Create a new commit.</summary>
 		/// <remarks>
 		/// Create a new commit.
-		/// <p>
+		/// <p/>
 		/// See
 		/// <see cref="TestRepository{R}.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
 		/// 	">TestRepository&lt;R&gt;.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
@@ -325,7 +324,7 @@ namespace NGit.Junit
 		/// <summary>Create a new commit.</summary>
 		/// <remarks>
 		/// Create a new commit.
-		/// <p>
+		/// <p/>
 		/// See
 		/// <see cref="TestRepository{R}.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
 		/// 	">TestRepository&lt;R&gt;.Commit(int, NGit.Revwalk.RevTree, NGit.Revwalk.RevCommit[])
@@ -349,7 +348,7 @@ namespace NGit.Junit
 		/// <summary>Create a new commit.</summary>
 		/// <remarks>
 		/// Create a new commit.
-		/// <p>
+		/// <p/>
 		/// The author and committer identities are stored using the current
 		/// timestamp, after being incremented by
 		/// <code>secDelta</code>
@@ -398,11 +397,11 @@ namespace NGit.Junit
 		/// <summary>Construct an annotated tag object pointing at another object.</summary>
 		/// <remarks>
 		/// Construct an annotated tag object pointing at another object.
-		/// <p>
+		/// <p/>
 		/// The tagger is the committer identity, at the current time as specified by
 		/// <see cref="TestRepository{R}.Tick(int)">TestRepository&lt;R&gt;.Tick(int)</see>
 		/// . The time is not increased.
-		/// <p>
+		/// <p/>
 		/// The tag message is empty.
 		/// </remarks>
 		/// <param name="name">
@@ -463,7 +462,6 @@ namespace NGit.Junit
 
 		/// <summary>Update a reference to point to an object.</summary>
 		/// <remarks>Update a reference to point to an object.</remarks>
-		/// <?></?>
 		/// <param name="ref">
 		/// the name of the reference to update to. If
 		/// <code>ref</code>
@@ -581,7 +579,6 @@ namespace NGit.Junit
 
 		/// <summary>Ensure the body of the given object has been parsed.</summary>
 		/// <remarks>Ensure the body of the given object has been parsed.</remarks>
-		/// <?></?>
 		/// <param name="object">
 		/// reference to the (possibly unparsed) object to force body
 		/// parsing of.
@@ -652,7 +649,7 @@ namespace NGit.Junit
 		/// <summary>Run consistency checks against the object database.</summary>
 		/// <remarks>
 		/// Run consistency checks against the object database.
-		/// <p>
+		/// <p/>
 		/// This method completes silently if the checks pass. A temporary revision
 		/// pool is constructed during the checking.
 		/// </remarks>
@@ -721,7 +718,7 @@ namespace NGit.Junit
 		/// <summary>Pack all reachable objects in the repository into a single pack file.</summary>
 		/// <remarks>
 		/// Pack all reachable objects in the repository into a single pack file.
-		/// <p>
+		/// <p/>
 		/// All loose objects are automatically pruned. Existing packs however are
 		/// not removed.
 		/// </remarks>

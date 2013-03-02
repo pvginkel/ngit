@@ -53,11 +53,10 @@ namespace NGit.Transport
 	/// <remarks>
 	/// Base helper class for fetch connection implementations. Provides some common
 	/// typical structures and methods used during fetch connection.
-	/// <p>
+	/// <p/>
 	/// Implementors of fetch over pack-based protocols should consider using
 	/// <see cref="BasePackFetchConnection">BasePackFetchConnection</see>
 	/// instead.
-	/// </p>
 	/// </remarks>
 	internal abstract class BaseFetchConnection : BaseConnection, FetchConnection
 	{

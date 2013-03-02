@@ -60,31 +60,31 @@ namespace NGit.Api
 	/// <summary>Checkout a branch to the working tree.</summary>
 	/// <remarks>
 	/// Checkout a branch to the working tree.
-	/// <p>
+	/// <p/>
 	/// Examples (<code>git</code> is a
 	/// <see cref="Git">Git</see>
 	/// instance):
-	/// <p>
+	/// <p/>
 	/// Check out an existing branch:
 	/// <pre>
 	/// git.checkout().setName(&quot;feature&quot;).call();
 	/// </pre>
-	/// <p>
+	/// <p/>
 	/// Check out paths from the index:
 	/// <pre>
 	/// git.checkout().addPath(&quot;file1.txt&quot;).addPath(&quot;file2.txt&quot;).call();
 	/// </pre>
-	/// <p>
+	/// <p/>
 	/// Check out a path from a commit:
 	/// <pre>
-	/// git.checkout().setStartPoint(&quot;HEAD&circ;&quot;).addPath(&quot;file1.txt&quot;).call();
+	/// git.checkout().setStartPoint(&quot;HEAD&amp;circ;&quot;).addPath(&quot;file1.txt&quot;).call();
 	/// </pre>
-	/// <p>
+	/// <p/>
 	/// Create a new branch and check it out:
 	/// <pre>
 	/// git.checkout().setCreateBranch(true).setName(&quot;newbranch&quot;).call();
 	/// </pre>
-	/// <p>
+	/// <p/>
 	/// Create a new tracking branch for a remote branch and check it out:
 	/// <pre>
 	/// git.checkout().setCreateBranch(true).setName(&quot;stable&quot;)
@@ -93,8 +93,8 @@ namespace NGit.Api
 	/// </pre>
 	/// </remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html"
-	/// *      >Git documentation about Checkout</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html"
+	/// >Git documentation about Checkout</a></seealso>
 	public class CheckoutCommand : GitCommand<Ref>
 	{
 		private string name;
@@ -282,7 +282,7 @@ namespace NGit.Api
 		/// paths, use
 		/// <see cref="SetAllPaths(bool)">SetAllPaths(bool)</see>
 		/// .
-		/// <p>
+		/// <p/>
 		/// If this option is set, neither the
 		/// <see cref="SetCreateBranch(bool)">SetCreateBranch(bool)</see>
 		/// nor
@@ -305,13 +305,13 @@ namespace NGit.Api
 		/// <summary>Set whether to checkout all paths.</summary>
 		/// <remarks>
 		/// Set whether to checkout all paths.
-		/// <p>
+		/// <p/>
 		/// This options should be used when you want to do a path checkout on the
 		/// entire repository and so calling
 		/// <see cref="AddPath(string)">AddPath(string)</see>
 		/// is not possible
 		/// since empty paths are not allowed.
-		/// <p>
+		/// <p/>
 		/// If this option is set, neither the
 		/// <see cref="SetCreateBranch(bool)">SetCreateBranch(bool)</see>
 		/// nor
@@ -482,7 +482,7 @@ namespace NGit.Api
 		/// <remarks>
 		/// Specify the name of the branch or commit to check out, or the new branch
 		/// name.
-		/// <p>
+		/// <p/>
 		/// When only checking out paths and not switching branches, use
 		/// <see cref="SetStartPoint(string)">SetStartPoint(string)</see>
 		/// or
@@ -490,7 +490,7 @@ namespace NGit.Api
 		/// 	</see>
 		/// to
 		/// specify from which branch or commit to check out files.
-		/// <p>
+		/// <p/>
 		/// When
 		/// <see cref="SetCreateBranch(bool)">SetCreateBranch(bool)</see>
 		/// is set to <code>true</code>, use
@@ -514,7 +514,7 @@ namespace NGit.Api
 		/// <summary>Specify whether to create a new branch.</summary>
 		/// <remarks>
 		/// Specify whether to create a new branch.
-		/// <p>
+		/// <p/>
 		/// If <code>true</code> is used, the name of the new branch must be set
 		/// using
 		/// <see cref="SetName(string)">SetName(string)</see>
@@ -561,10 +561,10 @@ namespace NGit.Api
 		/// <summary>Set the name of the commit that should be checked out.</summary>
 		/// <remarks>
 		/// Set the name of the commit that should be checked out.
-		/// <p>
+		/// <p/>
 		/// When checking out files and this is not specified or <code>null</code>,
 		/// the index is used.
-		/// <p>
+		/// <p/>
 		/// When creating a new branch, this will be used as the start point. If not
 		/// specified or <code>null</code>, the current HEAD is used.
 		/// </remarks>
@@ -581,10 +581,10 @@ namespace NGit.Api
 		/// <summary>Set the commit that should be checked out.</summary>
 		/// <remarks>
 		/// Set the commit that should be checked out.
-		/// <p>
+		/// <p/>
 		/// When creating a new branch, this will be used as the start point. If not
 		/// specified or <code>null</code>, the current HEAD is used.
-		/// <p>
+		/// <p/>
 		/// When checking out files and this is not specified or <code>null</code>,
 		/// the index is used.
 		/// </remarks>

@@ -58,8 +58,8 @@ namespace NGit.Api
 	/// <summary>A class used to execute a submodule update command.</summary>
 	/// <remarks>A class used to execute a submodule update command.</remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
-	/// *      >Git documentation about submodules</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
+	/// >Git documentation about submodules</a></seealso>
 	public class SubmoduleUpdateCommand : TransportCommand<NGit.Api.SubmoduleUpdateCommand
 		, ICollection<string>>
 	{

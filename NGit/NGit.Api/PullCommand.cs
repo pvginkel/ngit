@@ -53,7 +53,7 @@ namespace NGit.Api
 {
 	/// <summary>The Pull command</summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-pull.html"
-	/// *      >Git documentation about Pull</a></seealso>
+	/// >Git documentation about Pull</a></seealso>
 	public class PullCommand : TransportCommand<NGit.Api.PullCommand, PullResult>
 	{
 		private static readonly string DOT = ".";

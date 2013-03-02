@@ -53,7 +53,7 @@ namespace NGit.Merge
 	/// <summary>Formatter for constructing the commit message for a squashed commit.</summary>
 	/// <remarks>
 	/// Formatter for constructing the commit message for a squashed commit.
-	/// <p>
+	/// <p/>
 	/// The format should be the same as C Git does it, for compatibility.
 	/// </remarks>
 	public class SquashMessageFormatter

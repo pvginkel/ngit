@@ -50,11 +50,10 @@ namespace NGit.Diff
 	/// Wraps two
 	/// <see cref="Sequence">Sequence</see>
 	/// instances to cache their element hash codes.
-	/// <p>
+	/// <p/>
 	/// This pair wraps two sequences that contain cached hash codes for the input
 	/// sequences.
 	/// </summary>
-	/// <?></?>
 	public class HashedSequencePair<S> where S:Sequence
 	{
 		private readonly SequenceComparator<S> cmp;

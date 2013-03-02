@@ -68,8 +68,8 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html"
-	/// *      >Git documentation about revert</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html"
+	/// >Git documentation about revert</a></seealso>
 	public class RevertCommand : GitCommand<RevCommit>
 	{
 		private IList<Ref> commits = new List<Ref>();

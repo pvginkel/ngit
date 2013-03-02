@@ -64,7 +64,7 @@ namespace NGit.Api
 	/// to finally execute the command.
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html"
-	/// *      >Git documentation about Push</a></seealso>
+	/// >Git documentation about Push</a></seealso>
 	public class PushCommand : TransportCommand<NGit.Api.PushCommand, Iterable<PushResult
 		>>
 	{

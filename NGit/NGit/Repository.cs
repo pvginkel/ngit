@@ -62,10 +62,10 @@ namespace NGit
 	/// <summary>Represents a Git repository.</summary>
 	/// <remarks>
 	/// Represents a Git repository.
-	/// <p>
+	/// <p/>
 	/// A repository holds all objects and refs used for managing source code (could
 	/// be any type of file, but source code is what SCM's are typically used for).
-	/// <p>
+	/// <p/>
 	/// This class is thread-safe.
 	/// </remarks>
 	public abstract class Repository
@@ -121,7 +121,7 @@ namespace NGit
 		/// <summary>Fire an event to all registered listeners.</summary>
 		/// <remarks>
 		/// Fire an event to all registered listeners.
-		/// <p>
+		/// <p/>
 		/// The source repository of the event is automatically set to this
 		/// repository, before the event is delivered to any listeners.
 		/// </remarks>
@@ -136,7 +136,7 @@ namespace NGit
 		/// <summary>Create a new Git repository.</summary>
 		/// <remarks>
 		/// Create a new Git repository.
-		/// <p>
+		/// <p/>
 		/// Repository with working tree is created using this method. This method is
 		/// the same as
 		/// <code>create(false)</code>
@@ -238,7 +238,7 @@ namespace NGit
 		/// <summary>Open an object from this repository.</summary>
 		/// <remarks>
 		/// Open an object from this repository.
-		/// <p>
+		/// <p/>
 		/// This is a one-shot call interface which may be faster than allocating a
 		/// <see cref="NewObjectReader()">NewObjectReader()</see>
 		/// to perform the lookup.
@@ -259,7 +259,7 @@ namespace NGit
 		/// <summary>Open an object from this repository.</summary>
 		/// <remarks>
 		/// Open an object from this repository.
-		/// <p>
+		/// <p/>
 		/// This is a one-shot call interface which may be faster than allocating a
 		/// <see cref="NewObjectReader()">NewObjectReader()</see>
 		/// to perform the lookup.
@@ -370,7 +370,7 @@ namespace NGit
 		/// <li><i>id</i><b>^{tag}</b>: ensure <i>id</i> is a tag</li>
 		/// <li><i>id</i><b>^{blob}</b>: ensure <i>id</i> is a blob</li>
 		/// </ul>
-		/// <p>
+		/// <p/>
 		/// The following operators are specified by Git conventions, but are not
 		/// supported by this method:
 		/// <ul>
@@ -1070,7 +1070,7 @@ namespace NGit
 		/// Invoked when the use count drops to zero during
 		/// <see cref="Close()">Close()</see>
 		/// .
-		/// <p>
+		/// <p/>
 		/// The default implementation closes the object and ref databases.
 		/// </summary>
 		protected internal virtual void DoClose()
@@ -1097,7 +1097,7 @@ namespace NGit
 		/// Get the name of the reference that
 		/// <code>HEAD</code>
 		/// points to.
-		/// <p>
+		/// <p/>
 		/// This is essentially the same as doing:
 		/// <pre>
 		/// return getRef(Constants.HEAD).getTarget().getName()
@@ -1134,7 +1134,7 @@ namespace NGit
 		/// Get the short name of the current branch that
 		/// <code>HEAD</code>
 		/// points to.
-		/// <p>
+		/// <p/>
 		/// This is essentially the same as
 		/// <see cref="GetFullBranch()">GetFullBranch()</see>
 		/// , except the
@@ -1164,7 +1164,7 @@ namespace NGit
 		/// Objects known to exist but not expressed by
 		/// <see cref="GetAllRefs()">GetAllRefs()</see>
 		/// .
-		/// <p>
+		/// <p/>
 		/// When a repository borrows objects from another repository, it can
 		/// advertise that it safely has that other repository's references, without
 		/// exposing any other details about the other repository.  This may help
@@ -1223,7 +1223,7 @@ namespace NGit
 		/// <summary>Peel a possibly unpeeled reference to an annotated tag.</summary>
 		/// <remarks>
 		/// Peel a possibly unpeeled reference to an annotated tag.
-		/// <p>
+		/// <p/>
 		/// If the ref cannot be peeled (as it does not refer to an annotated tag)
 		/// the peeled id stays null, but
 		/// <see cref="Ref.IsPeeled()">Ref.IsPeeled()</see>
@@ -1302,7 +1302,7 @@ namespace NGit
 		/// <summary>Create a new in-core index representation and read an index from disk.</summary>
 		/// <remarks>
 		/// Create a new in-core index representation and read an index from disk.
-		/// <p>
+		/// <p/>
 		/// The new index will be read before it is returned to the caller. Read
 		/// failures are reported as exceptions and therefore prevent the method from
 		/// returning a partially populated index.
@@ -1331,7 +1331,7 @@ namespace NGit
 		/// <summary>Create a new in-core index representation, lock it, and read from disk.</summary>
 		/// <remarks>
 		/// Create a new in-core index representation, lock it, and read from disk.
-		/// <p>
+		/// <p/>
 		/// The new index will be locked and then read before it is returned to the
 		/// caller. Read failures are reported as exceptions and therefore prevent
 		/// the method from returning a partially populated index.

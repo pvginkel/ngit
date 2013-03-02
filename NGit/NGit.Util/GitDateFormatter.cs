@@ -56,7 +56,7 @@ namespace NGit.Util
 	/// <remarks>
 	/// A utility for formatting dates according to the Git log.date formats plus
 	/// extensions.
-	/// <p>
+	/// <p/>
 	/// The enum
 	/// <see cref="Format">Format</see>
 	/// defines the available types.

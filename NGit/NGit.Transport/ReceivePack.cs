@@ -90,13 +90,13 @@ namespace NGit.Transport
 		/// <summary>Set the hook which is invoked prior to commands being executed.</summary>
 		/// <remarks>
 		/// Set the hook which is invoked prior to commands being executed.
-		/// <p>
+		/// <p/>
 		/// Only valid commands (those which have no obvious errors according to the
 		/// received input and this instance's configuration) are passed into the
 		/// hook. The hook may mark a command with a result of any value other than
 		/// <see cref="Result.NOT_ATTEMPTED">Result.NOT_ATTEMPTED</see>
 		/// to block its execution.
-		/// <p>
+		/// <p/>
 		/// The hook may be called with an empty command collection if the current
 		/// set is completely invalid.
 		/// </remarks>
@@ -115,7 +115,7 @@ namespace NGit.Transport
 		/// <summary>Set the hook which is invoked after commands are executed.</summary>
 		/// <remarks>
 		/// Set the hook which is invoked after commands are executed.
-		/// <p>
+		/// <p/>
 		/// Only successful commands (type is
 		/// <see cref="Result.OK">Result.OK</see>
 		/// ) are passed into the

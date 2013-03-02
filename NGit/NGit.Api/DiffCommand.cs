@@ -59,7 +59,7 @@ namespace NGit.Api
 	/// <summary>Show changes between commits, commit and working tree, etc.</summary>
 	/// <remarks>Show changes between commits, commit and working tree, etc.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html"
-	/// *      >Git documentation about diff</a></seealso>
+	/// >Git documentation about diff</a></seealso>
 	public class DiffCommand : GitCommand<IList<DiffEntry>>
 	{
 		private AbstractTreeIterator oldTree;

@@ -310,7 +310,7 @@ namespace NGit.Diff
 		/// <summary>Get the old name associated with this file.</summary>
 		/// <remarks>
 		/// Get the old name associated with this file.
-		/// <p>
+		/// <p/>
 		/// The meaning of the old name can differ depending on the semantic meaning
 		/// of this patch:
 		/// <ul>
@@ -332,7 +332,7 @@ namespace NGit.Diff
 		/// <summary>Get the new name associated with this file.</summary>
 		/// <remarks>
 		/// Get the new name associated with this file.
-		/// <p>
+		/// <p/>
 		/// The meaning of the new name can differ depending on the semantic meaning
 		/// of this patch:
 		/// <ul>
@@ -342,7 +342,7 @@ namespace NGit.Diff
 		/// </li>
 		/// <li><i>file delete</i>: always <code>/dev/null</code></li>
 		/// <li><i>file copy</i>: destination file the copy ends up at</li>
-		/// <li><i>file rename</i>: destination file the rename ends up at/li&gt;
+		/// <li><i>file rename</i>: destination file the rename ends up at</li>
 		/// </ul>
 		/// </remarks>
 		/// <returns>new name for this file.</returns>

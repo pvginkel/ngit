@@ -58,7 +58,7 @@ namespace NGit.Api
 	/// <summary>Apply a patch to files and/or to the index.</summary>
 	/// <remarks>Apply a patch to files and/or to the index.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-apply.html"
-	/// *      >Git documentation about apply</a></seealso>
+	/// >Git documentation about apply</a></seealso>
 	/// <since>2.0</since>
 	public class ApplyCommand : GitCommand<ApplyResult>
 	{

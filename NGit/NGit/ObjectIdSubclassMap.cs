@@ -51,16 +51,15 @@ namespace NGit
 	/// Fast, efficient map specifically for
 	/// <see cref="ObjectId">ObjectId</see>
 	/// subclasses.
-	/// <p>
+	/// <p/>
 	/// This map provides an efficient translation from any ObjectId instance to a
 	/// cached subclass of ObjectId that has the same value.
-	/// <p>
+	/// <p/>
 	/// If object instances are stored in only one map,
 	/// <see cref="ObjectIdOwnerMap{V}">ObjectIdOwnerMap&lt;V&gt;</see>
 	/// is a
 	/// more efficient implementation.
 	/// </summary>
-	/// <?></?>
 	public class ObjectIdSubclassMap<V> : Iterable<V> where V:ObjectId
 	{
 		private const int INITIAL_TABLE_SIZE = 2048;
@@ -121,7 +120,7 @@ namespace NGit
 		/// <summary>Store an object for future lookup.</summary>
 		/// <remarks>
 		/// Store an object for future lookup.
-		/// <p>
+		/// <p/>
 		/// An existing mapping for <b>must not</b> be in this map. Callers must
 		/// first call
 		/// <see cref="ObjectIdSubclassMap{V}.Get(AnyObjectId)">ObjectIdSubclassMap&lt;V&gt;.Get(AnyObjectId)
@@ -133,7 +132,6 @@ namespace NGit
 		/// .
 		/// </remarks>
 		/// <param name="newValue">the object to store.</param>
-		/// <?></?>
 		public virtual void Add<Q>(Q newValue) where Q:V
 		{
 			if (++size == grow)
@@ -146,7 +144,7 @@ namespace NGit
 		/// <summary>Store an object for future lookup.</summary>
 		/// <remarks>
 		/// Store an object for future lookup.
-		/// <p>
+		/// <p/>
 		/// Stores
 		/// <code>newValue</code>
 		/// , but only if there is not already an object for
@@ -166,7 +164,6 @@ namespace NGit
 		/// <code>get(newValue)</code>
 		/// first.
 		/// </returns>
-		/// <?></?>
 		public virtual V AddIfAbsent<Q>(Q newValue) where Q:V
 		{
 			int msk = mask;

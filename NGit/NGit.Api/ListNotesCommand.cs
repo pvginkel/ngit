@@ -55,7 +55,7 @@ namespace NGit.Api
 	/// <summary>List object notes.</summary>
 	/// <remarks>List object notes.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-notes.html"
-	/// *      >Git documentation about Notes</a></seealso>
+	/// >Git documentation about Notes</a></seealso>
 	public class ListNotesCommand : GitCommand<IList<Note>>
 	{
 		private string notesRef = Constants.R_NOTES_COMMITS;

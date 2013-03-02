@@ -844,7 +844,7 @@ namespace NGit.Storage.File
 		/// <summary>Kick the timestamp of a local file.</summary>
 		/// <remarks>
 		/// Kick the timestamp of a local file.
-		/// <p>
+		/// <p/>
 		/// We shouldn't have to make these method calls. The cache is using file
 		/// system timestamps, and on many systems unit tests run faster than the
 		/// modification clock. Dumping the cache after we make an edit behind

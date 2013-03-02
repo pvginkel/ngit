@@ -54,8 +54,8 @@ namespace NGit.Api
 {
 	/// <summary>The reflog command</summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-reflog.html"
-	/// *      >Git documentation about reflog</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-reflog.html"
+	/// >Git documentation about reflog</a></seealso>
 	public class ReflogCommand : GitCommand<ICollection<ReflogEntry>>
 	{
 		private string @ref = Constants.HEAD;

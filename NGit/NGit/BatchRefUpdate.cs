@@ -54,7 +54,7 @@ namespace NGit
 	/// <summary>Batch of reference updates to be applied to a repository.</summary>
 	/// <remarks>
 	/// Batch of reference updates to be applied to a repository.
-	/// <p>
+	/// <p/>
 	/// The batch update is primarily useful in the transport code, where a client or
 	/// server is making changes to more than one reference at a time.
 	/// </remarks>
@@ -125,7 +125,7 @@ namespace NGit
 		/// <summary>Set the identity of the user appearing in the reflog.</summary>
 		/// <remarks>
 		/// Set the identity of the user appearing in the reflog.
-		/// <p>
+		/// <p/>
 		/// The timestamp portion of the identity is ignored. A new identity with the
 		/// current timestamp will be created automatically when the update occurs
 		/// and the log record is written.
@@ -280,7 +280,7 @@ namespace NGit
 		/// <summary>Execute this batch update.</summary>
 		/// <remarks>
 		/// Execute this batch update.
-		/// <p>
+		/// <p/>
 		/// The default implementation of this method performs a sequential reference
 		/// update over each reference.
 		/// </remarks>

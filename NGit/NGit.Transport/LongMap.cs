@@ -47,11 +47,10 @@ using Sharpen;
 namespace NGit.Transport
 {
 	/// <summary>
-	/// Simple Map<long,Object> helper for
+	/// Simple Map&lt;long,Object&gt; helper for
 	/// <see cref="PackParser">PackParser</see>
 	/// .
 	/// </summary>
-	/// <?></?>
 	internal sealed class LongMap<V>
 	{
 		private const float LOAD_FACTOR = 0.75f;

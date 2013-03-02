@@ -55,8 +55,8 @@ namespace NGit.Api
 	/// <summary>Used to create a local branch.</summary>
 	/// <remarks>Used to create a local branch.</remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
-	/// *      >Git documentation about Branch</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
+	/// >Git documentation about Branch</a></seealso>
 	public class CreateBranchCommand : GitCommand<Ref>
 	{
 		private string name;

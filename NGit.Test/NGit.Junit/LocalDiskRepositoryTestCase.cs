@@ -55,15 +55,15 @@ namespace NGit.Junit
 	/// <summary>JUnit TestCase with specialized support for temporary local repository.</summary>
 	/// <remarks>
 	/// JUnit TestCase with specialized support for temporary local repository.
-	/// <p>
+	/// <p/>
 	/// A temporary directory is created for each test, allowing each test to use a
 	/// fresh environment. The temporary directory is cleaned up after the test ends.
-	/// <p>
+	/// <p/>
 	/// Callers should not use
 	/// <see cref="NGit.RepositoryCache">NGit.RepositoryCache</see>
 	/// from within these tests as it
 	/// may wedge file descriptors open past the end of the test.
-	/// <p>
+	/// <p/>
 	/// A system property
 	/// <code>jgit.junit.usemmap</code>
 	/// defines whether memory mapping

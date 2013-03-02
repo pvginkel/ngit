@@ -54,12 +54,12 @@ namespace NGit.Util
 	/// Specialized variant of an ArrayList to support a
 	/// <code>RefDatabase</code>
 	/// .
-	/// <p>
+	/// <p/>
 	/// This list is a hybrid of a Map&lt;String,Ref&gt; and of a List&lt;Ref&gt;. It
 	/// tracks reference instances by name by keeping them sorted and performing
 	/// binary search to locate an entry. Lookup time is O(log N), but addition and
 	/// removal is O(N + log N) due to the list expansion or contraction costs.
-	/// <p>
+	/// <p/>
 	/// This list type is copy-on-write. Mutation methods return a new copy of the
 	/// list, leaving
 	/// <code>this</code>
@@ -68,14 +68,12 @@ namespace NGit.Util
 	/// <see cref="System.Collections.IList{E}">System.Collections.IList&lt;E&gt;</see>
 	/// interface contract.
 	/// </summary>
-	/// <?></?>
 	public class RefList<T> : Iterable<Ref> where T:Ref
 	{
 		private static readonly NGit.Util.RefList<Ref> EMPTY = new NGit.Util.RefList<Ref>
 			(new Ref[0], 0);
 
 		/// <returns>an empty unmodifiable reference list.</returns>
-		/// <?></?>
 		public static NGit.Util.RefList<T> EmptyList<T>() where T:Ref
 		{
 			return new RefList<T>(new Ref[0], 0);
@@ -247,7 +245,7 @@ namespace NGit.Util
 		/// Obtain a builder initialized with the first
 		/// <code>n</code>
 		/// elements.
-		/// <p>
+		/// <p/>
 		/// Copies the first
 		/// <code>n</code>
 		/// elements from this list into a new builder,
@@ -269,7 +267,7 @@ namespace NGit.Util
 		/// <summary>Obtain a new copy of the list after changing one element.</summary>
 		/// <remarks>
 		/// Obtain a new copy of the list after changing one element.
-		/// <p>
+		/// <p/>
 		/// This list instance is not affected by the replacement. Because this
 		/// method copies the entire list, it runs in O(N) time.
 		/// </remarks>
@@ -293,7 +291,7 @@ namespace NGit.Util
 		/// <summary>Add an item at a specific index.</summary>
 		/// <remarks>
 		/// Add an item at a specific index.
-		/// <p>
+		/// <p/>
 		/// This list instance is not affected by the addition. Because this method
 		/// copies the entire list, it runs in O(N) time.
 		/// </remarks>
@@ -332,7 +330,7 @@ namespace NGit.Util
 		/// <summary>Remove an item at a specific index.</summary>
 		/// <remarks>
 		/// Remove an item at a specific index.
-		/// <p>
+		/// <p/>
 		/// This list instance is not affected by the addition. Because this method
 		/// copies the entire list, it runs in O(N) time.
 		/// </remarks>
@@ -363,7 +361,7 @@ namespace NGit.Util
 		/// <summary>Store a reference, adding or replacing as necessary.</summary>
 		/// <remarks>
 		/// Store a reference, adding or replacing as necessary.
-		/// <p>
+		/// <p/>
 		/// This list instance is not affected by the store. The correct position is
 		/// determined, and the item is added if missing, or replaced if existing.
 		/// Because this method copies the entire list, it runs in O(N + log N) time.
@@ -400,7 +398,6 @@ namespace NGit.Util
 
 	/// <summary>Builder to facilitate fast construction of an immutable RefList.</summary>
 	/// <remarks>Builder to facilitate fast construction of an immutable RefList.</remarks>
-	/// <?></?>
 	public class RefListBuilder<T> where T:Ref
 	{
 		private Ref[] list;
@@ -452,7 +449,7 @@ namespace NGit.Util
 		/// <summary>Add the reference to the end of the array.</summary>
 		/// <remarks>
 		/// Add the reference to the end of the array.
-		/// <p>
+		/// <p/>
 		/// References must be added in sort order, or the array must be sorted
 		/// after additions are complete using
 		/// <see cref="Builder{T}.Sort()">Builder&lt;T&gt;.Sort()</see>
@@ -473,7 +470,7 @@ namespace NGit.Util
 		/// <summary>Add all items from a source array.</summary>
 		/// <remarks>
 		/// Add all items from a source array.
-		/// <p>
+		/// <p/>
 		/// References must be added in sort order, or the array must be sorted
 		/// after additions are complete using
 		/// <see cref="Builder{T}.Sort()">Builder&lt;T&gt;.Sort()</see>

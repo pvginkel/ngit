@@ -131,7 +131,7 @@ namespace NGit.Merge
 		/// <summary>Set the inserter this merger will use to create objects.</summary>
 		/// <remarks>
 		/// Set the inserter this merger will use to create objects.
-		/// <p>
+		/// <p/>
 		/// If an inserter was already set on this instance (such as by a prior set,
 		/// or a prior call to
 		/// <see cref="GetObjectInserter()">GetObjectInserter()</see>
@@ -156,7 +156,7 @@ namespace NGit.Merge
 		/// <summary>Merge together two or more tree-ish objects.</summary>
 		/// <remarks>
 		/// Merge together two or more tree-ish objects.
-		/// <p>
+		/// <p/>
 		/// Any tree-ish may be supplied as inputs. Commits and/or tags pointing at
 		/// trees or commits may be passed as input objects.
 		/// </remarks>
@@ -306,7 +306,7 @@ namespace NGit.Merge
 		/// <summary>Execute the merge.</summary>
 		/// <remarks>
 		/// Execute the merge.
-		/// <p>
+		/// <p/>
 		/// This method is called from
 		/// <see cref="Merge(NGit.AnyObjectId[])">Merge(NGit.AnyObjectId[])</see>
 		/// after the

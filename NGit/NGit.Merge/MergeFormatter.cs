@@ -67,7 +67,7 @@ namespace NGit.Merge
 		/// <param name="res">the merge result which should be presented</param>
 		/// <param name="seqName">
 		/// When a conflict is reported each conflicting range will get a
-		/// name. This name is following the "<&lt;&lt;&lt;&lt;&lt;&lt; " or ">&gt;&gt;&gt;&gt;&gt;&gt; "
+		/// name. This name is following the "&lt;&lt;&lt;&lt;&lt;&lt;&lt; " or "&gt;&gt;&gt;&gt;&gt;&gt;&gt; "
 		/// conflict markers. The names for the sequences are given in
 		/// this list
 		/// </param>

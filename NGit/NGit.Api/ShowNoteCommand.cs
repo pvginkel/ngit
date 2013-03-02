@@ -54,7 +54,7 @@ namespace NGit.Api
 	/// <summary>Show an object note.</summary>
 	/// <remarks>Show an object note.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-notes.html"
-	/// *      >Git documentation about Notes</a></seealso>
+	/// >Git documentation about Notes</a></seealso>
 	public class ShowNoteCommand : GitCommand<Note>
 	{
 		private RevObject id;

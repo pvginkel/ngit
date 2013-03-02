@@ -58,7 +58,7 @@ namespace NGit.Api
 	/// <summary>Command class to apply a stashed commit.</summary>
 	/// <remarks>Command class to apply a stashed commit.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-stash.html"
-	/// *      >Git documentation about Stash</a></seealso>
+	/// >Git documentation about Stash</a></seealso>
 	/// <since>2.0</since>
 	public class StashApplyCommand : GitCommand<ObjectId>
 	{
@@ -116,7 +116,7 @@ namespace NGit.Api
 
 		/// <summary>
 		/// Set the stash reference to apply
-		/// <p>
+		/// <p/>
 		/// This will default to apply the latest stashed commit (stash@{0}) if
 		/// unspecified
 		/// </summary>

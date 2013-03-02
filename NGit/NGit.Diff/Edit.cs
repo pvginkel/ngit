@@ -50,21 +50,21 @@ namespace NGit.Diff
 	/// 	</summary>
 	/// <remarks>
 	/// A modified region detected between two versions of roughly the same content.
-	/// <p>
+	/// <p/>
 	/// An edit covers the modified region only. It does not cover a common region.
-	/// <p>
+	/// <p/>
 	/// Regions should be specified using 0 based notation, so add 1 to the start and
 	/// end marks for line numbers in a file.
-	/// <p>
-	/// An edit where <code>beginA == endA && beginB &lt; endB</code> is an insert edit,
+	/// <p/>
+	/// An edit where <code>beginA == endA &amp;&amp; beginB &lt; endB</code> is an insert edit,
 	/// that is sequence B inserted the elements in region
 	/// <code>[beginB, endB)</code> at <code>beginA</code>.
-	/// <p>
-	/// An edit where <code>beginA &lt; endA && beginB == endB</code> is a delete edit,
+	/// <p/>
+    /// An edit where <code>beginA &lt; endA &amp;&amp; beginB == endB</code> is a delete edit,
 	/// that is sequence B has removed the elements between
 	/// <code>[beginA, endA)</code>.
-	/// <p>
-	/// An edit where <code>beginA &lt; endA && beginB &lt; endB</code> is a replace edit,
+	/// <p/>
+    /// An edit where <code>beginA &lt; endA &amp;&amp; beginB &lt; endB</code> is a replace edit,
 	/// that is sequence B has replaced the range of elements between
 	/// <code>[beginA, endA)</code> with those found in <code>[beginB, endB)</code>.
 	/// </remarks>

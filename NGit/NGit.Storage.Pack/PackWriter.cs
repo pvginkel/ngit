@@ -56,17 +56,16 @@ using Sharpen;
 namespace NGit.Storage.Pack
 {
 	/// <summary>
-	/// <p>
+	/// <p/>
 	/// PackWriter class is responsible for generating pack files from specified set
 	/// of objects from repository.
 	/// </summary>
 	/// <remarks>
-	/// <p>
+	/// <p/>
 	/// PackWriter class is responsible for generating pack files from specified set
 	/// of objects from repository. This implementation produce pack files in format
 	/// version 2.
-	/// </p>
-	/// <p>
+	/// <p/>
 	/// Source of objects may be specified in two ways:
 	/// <ul>
 	/// <li>(usually) by providing sets of interesting and uninteresting objects in
@@ -90,19 +89,16 @@ namespace NGit.Storage.Pack
 	/// <see cref="WritePack(NGit.ProgressMonitor, NGit.ProgressMonitor, Sharpen.OutputStream)
 	/// 	">WritePack(NGit.ProgressMonitor, NGit.ProgressMonitor, Sharpen.OutputStream)</see>
 	/// .
-	/// </p>
-	/// <p>
+	/// <p/>
 	/// Class provide set of configurable options and
 	/// <see cref="NGit.ProgressMonitor">NGit.ProgressMonitor</see>
 	/// support, as operations may take a long time for big repositories. Deltas
 	/// searching algorithm is <b>NOT IMPLEMENTED</b> yet - this implementation
 	/// relies only on deltas and objects reuse.
-	/// </p>
-	/// <p>
+	/// <p/>
 	/// This class is not thread safe, it is intended to be used in one thread, with
 	/// one instance per created pack. Subsequent calls to writePack result in
 	/// undefined behavior.
-	/// </p>
 	/// </remarks>
 	public class PackWriter
 	{
@@ -245,7 +241,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Create writer for specified repository.</summary>
 		/// <remarks>
 		/// Create writer for specified repository.
-		/// <p>
+		/// <p/>
 		/// Objects for packing are specified in
 		/// <see cref="PreparePack(Sharpen.Iterator{E})">PreparePack(Sharpen.Iterator&lt;E&gt;)
 		/// 	</see>
@@ -263,7 +259,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Create a writer to load objects from the specified reader.</summary>
 		/// <remarks>
 		/// Create a writer to load objects from the specified reader.
-		/// <p>
+		/// <p/>
 		/// Objects for packing are specified in
 		/// <see cref="PreparePack(Sharpen.Iterator{E})">PreparePack(Sharpen.Iterator&lt;E&gt;)
 		/// 	</see>
@@ -281,7 +277,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Create writer for specified repository.</summary>
 		/// <remarks>
 		/// Create writer for specified repository.
-		/// <p>
+		/// <p/>
 		/// Objects for packing are specified in
 		/// <see cref="PreparePack(Sharpen.Iterator{E})">PreparePack(Sharpen.Iterator&lt;E&gt;)
 		/// 	</see>
@@ -301,7 +297,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Create writer with a specified configuration.</summary>
 		/// <remarks>
 		/// Create writer with a specified configuration.
-		/// <p>
+		/// <p/>
 		/// Objects for packing are specified in
 		/// <see cref="PreparePack(Sharpen.Iterator{E})">PreparePack(Sharpen.Iterator&lt;E&gt;)
 		/// 	</see>
@@ -498,7 +494,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Set the tag targets that should be hoisted earlier during packing.</summary>
 		/// <remarks>
 		/// Set the tag targets that should be hoisted earlier during packing.
-		/// <p>
+		/// <p/>
 		/// Callers may put objects into this set before invoking any of the
 		/// preparePack methods to influence where an annotated tag's target is
 		/// stored within the resulting pack. Typically these will be clustered
@@ -571,7 +567,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Prepare the list of objects to be written to the pack stream.</summary>
 		/// <remarks>
 		/// Prepare the list of objects to be written to the pack stream.
-		/// <p>
+		/// <p/>
 		/// Iterator <b>exactly</b> determines which objects are included in a pack
 		/// and order they appear in pack (except that objects order by type is not
 		/// needed at input). This order should conform general rules of ordering
@@ -579,7 +575,6 @@ namespace NGit.Storage.Pack
 		/// internally secured) and responsibility for guaranteeing this order is on
 		/// a caller side. Iterator must return each id of object to write exactly
 		/// once.
-		/// </p>
 		/// </remarks>
 		/// <param name="objectsSource">
 		/// iterator of object to store in a pack; order of objects within
@@ -609,7 +604,7 @@ namespace NGit.Storage.Pack
 //		/// <summary>Prepare the list of objects to be written to the pack stream.</summary>
 //		/// <remarks>
 //		/// Prepare the list of objects to be written to the pack stream.
-//		/// <p>
+//		/// <p/>
 //		/// Basing on these 2 sets, another set of objects to put in a pack file is
 //		/// created: this set consists of all objects reachable (ancestors) from
 //		/// interesting objects, except uninteresting objects and their ancestors.
@@ -643,7 +638,7 @@ namespace NGit.Storage.Pack
 //		/// <summary>Prepare the list of objects to be written to the pack stream.</summary>
 //		/// <remarks>
 //		/// Prepare the list of objects to be written to the pack stream.
-//		/// <p>
+//		/// <p/>
 //		/// Basing on these 2 sets, another set of objects to put in a pack file is
 //		/// created: this set consists of all objects reachable (ancestors) from
 //		/// interesting objects, except uninteresting objects and their ancestors.
@@ -701,7 +696,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Prepare the list of objects to be written to the pack stream.</summary>
 		/// <remarks>
 		/// Prepare the list of objects to be written to the pack stream.
-		/// <p>
+		/// <p/>
 		/// Basing on these 2 sets, another set of objects to put in a pack file is
 		/// created: this set consists of all objects reachable (ancestors) from
 		/// interesting objects, except uninteresting objects and their ancestors.
@@ -711,7 +706,6 @@ namespace NGit.Storage.Pack
 		/// appropriate set of output objects and their optimal order in output pack.
 		/// Order is consistent with general git in-pack rules: sort by object type,
 		/// recency, path and delta-base first.
-		/// </p>
 		/// </remarks>
 		/// <param name="countingMonitor">progress during object enumeration.</param>
 		/// <param name="want">
@@ -742,7 +736,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Prepare the list of objects to be written to the pack stream.</summary>
 		/// <remarks>
 		/// Prepare the list of objects to be written to the pack stream.
-		/// <p>
+		/// <p/>
 		/// Basing on these 2 sets, another set of objects to put in a pack file is
 		/// created: this set consists of all objects reachable (ancestors) from
 		/// interesting objects, except uninteresting objects and their ancestors.
@@ -752,7 +746,6 @@ namespace NGit.Storage.Pack
 		/// appropriate set of output objects and their optimal order in output pack.
 		/// Order is consistent with general git in-pack rules: sort by object type,
 		/// recency, path and delta-base first.
-		/// </p>
 		/// </remarks>
 		/// <param name="countingMonitor">progress during object enumeration.</param>
 		/// <param name="walk">ObjectWalk to perform enumeration.</param>
@@ -827,7 +820,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Create an index file to match the pack file just written.</summary>
 		/// <remarks>
 		/// Create an index file to match the pack file just written.
-		/// <p>
+		/// <p/>
 		/// This method can only be invoked after
 		/// <see cref="WritePack(NGit.ProgressMonitor, NGit.ProgressMonitor, Sharpen.OutputStream)
 		/// 	">WritePack(NGit.ProgressMonitor, NGit.ProgressMonitor, Sharpen.OutputStream)</see>
@@ -936,15 +929,13 @@ namespace NGit.Storage.Pack
 		/// <summary>Write the prepared pack to the supplied stream.</summary>
 		/// <remarks>
 		/// Write the prepared pack to the supplied stream.
-		/// <p>
+		/// <p/>
 		/// At first, this method collects and sorts objects to pack, then deltas
 		/// search is performed if set up accordingly, finally pack stream is
 		/// written.
-		/// </p>
-		/// <p>
+		/// <p/>
 		/// All reused objects data checksum (Adler32/CRC32) is computed and
 		/// validated against existing checksum.
-		/// </p>
 		/// </remarks>
 		/// <param name="compressMonitor">progress monitor to report object compression work.
 		/// 	</param>
@@ -2107,7 +2098,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Include one object to the output file.</summary>
 		/// <remarks>
 		/// Include one object to the output file.
-		/// <p>
+		/// <p/>
 		/// Objects are written in the order they are added. If the same object is
 		/// added twice, it may be written twice, creating a larger than necessary
 		/// file.
@@ -2163,7 +2154,7 @@ namespace NGit.Storage.Pack
 		/// <summary>Select an object representation for this writer.</summary>
 		/// <remarks>
 		/// Select an object representation for this writer.
-		/// <p>
+		/// <p/>
 		/// An
 		/// <see cref="NGit.ObjectReader">NGit.ObjectReader</see>
 		/// implementation should invoke this method once for

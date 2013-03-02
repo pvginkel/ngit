@@ -56,8 +56,8 @@ namespace NGit.Api
 	/// <summary>A class used to execute a submodule status command.</summary>
 	/// <remarks>A class used to execute a submodule status command.</remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
-	/// *      >Git documentation about submodules</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
+	/// >Git documentation about submodules</a></seealso>
 	public class SubmoduleStatusCommand : GitCommand<IDictionary<string, SubmoduleStatus
 		>>
 	{

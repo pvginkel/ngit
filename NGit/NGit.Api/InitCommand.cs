@@ -51,7 +51,7 @@ namespace NGit.Api
 {
 	/// <summary>Create an empty git repository or reinitalize an existing one</summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html"
-	/// *      >Git documentation about init</a></seealso>
+	/// >Git documentation about init</a></seealso>
 	public class InitCommand : Callable<Git>
 	{
 		private FilePath directory;

@@ -66,13 +66,13 @@ namespace NGit.Api
 	/// used for one invocation of the command (means: one call to
 	/// <see cref="Call()">Call()</see>
 	/// )
-	/// <p>
+	/// <p/>
 	/// This is currently a very basic implementation which takes only one starting
 	/// revision as option.
 	/// TODO: add more options (revision ranges, sorting, ...)
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html"
-	/// *      >Git documentation about Log</a></seealso>
+	/// >Git documentation about Log</a></seealso>
 	public class LogCommand : GitCommand<Iterable<RevCommit>>
 	{
 		private RevWalk walk;

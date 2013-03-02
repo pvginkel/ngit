@@ -61,8 +61,8 @@ namespace NGit.Api
 	/// currently present in the repository's config file.
 	/// </remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
-	/// *      >Git documentation about submodules</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
+	/// >Git documentation about submodules</a></seealso>
 	public class SubmoduleInitCommand : GitCommand<ICollection<string>>
 	{
 		private readonly ICollection<string> paths;

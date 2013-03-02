@@ -50,7 +50,6 @@ namespace NGit.Revplot
 {
 	/// <summary>A commit reference to a commit in the DAG.</summary>
 	/// <remarks>A commit reference to a commit in the DAG.</remarks>
-	/// <?></?>
 	/// <seealso cref="PlotCommitList{L}">PlotCommitList&lt;L&gt;</seealso>
 	[System.Serializable]
 	public class PlotCommit<L> : RevCommit, PlotCommit where L:PlotLane

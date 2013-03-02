@@ -55,8 +55,8 @@ namespace NGit.Api
 {
 	/// <summary>The ls-remote command</summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html"
-	/// *      >Git documentation about ls-remote</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html"
+	/// >Git documentation about ls-remote</a></seealso>
 	public class LsRemoteCommand : TransportCommand<NGit.Api.LsRemoteCommand, ICollection
 		<Ref>>
 	{

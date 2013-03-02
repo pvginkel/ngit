@@ -53,7 +53,6 @@ namespace NGit.Transport.Resolver
 	/// <see cref="NGit.Transport.UploadPack">NGit.Transport.UploadPack</see>
 	/// service instance.
 	/// </summary>
-	/// <?></?>
 	public abstract class UploadPackFactory<C>
 	{
 		private sealed class _UploadPackFactory_57 : UploadPackFactory<C>

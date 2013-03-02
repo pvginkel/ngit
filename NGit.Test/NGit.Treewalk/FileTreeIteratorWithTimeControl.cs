@@ -57,14 +57,14 @@ namespace NGit.Treewalk
 	/// <see cref="GetEntryLastModified()">GetEntryLastModified()</see>
 	/// . This allows to
 	/// write tests where certain files have to have the same modification time.
-	/// <p>
+	/// <p/>
 	/// This iterator is configured by a list of strictly increasing long values
 	/// t(0), t(1), ..., t(n). For each file with a modification between t(x) and
 	/// t(x+1) [ t(x) &lt;= time &lt; t(x+1) ] this iterator will report t(x). For files
 	/// with a modification time smaller t(0) a modification time of 0 is returned.
 	/// For files with a modification time greater or equal t(n) t(n) will be
 	/// returned.
-	/// <p>
+	/// <p/>
 	/// This class was written especially to test racy-git problems
 	/// </summary>
 	public class FileTreeIteratorWithTimeControl : FileTreeIterator

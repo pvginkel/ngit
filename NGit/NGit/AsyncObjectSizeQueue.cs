@@ -52,7 +52,6 @@ namespace NGit
 	/// A queue may perform background lookup of object sizes and supply them
 	/// (possibly out-of-order) to the application.
 	/// </remarks>
-	/// <?></?>
 	public interface AsyncObjectSizeQueue<T> : AsyncOperation where T:ObjectId
 	{
 		/// <summary>Position this queue onto the next available result.</summary>

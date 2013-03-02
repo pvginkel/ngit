@@ -53,7 +53,6 @@ namespace NGit.Transport.Resolver
 	/// <see cref="NGit.Repository">NGit.Repository</see>
 	/// by name from the URL.
 	/// </summary>
-	/// <?></?>
 	public abstract class RepositoryResolver<C>
 	{
 		private sealed class _RepositoryResolver_58 : RepositoryResolver<C>
@@ -77,7 +76,7 @@ namespace NGit.Transport.Resolver
 		/// Locate and open a reference to a
 		/// <see cref="NGit.Repository">NGit.Repository</see>
 		/// .
-		/// <p>
+		/// <p/>
 		/// The caller is responsible for closing the returned Repository.
 		/// </summary>
 		/// <param name="req">

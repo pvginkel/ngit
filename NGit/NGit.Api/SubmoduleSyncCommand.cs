@@ -60,8 +60,8 @@ namespace NGit.Api
 	/// in the .gitmodules file.
 	/// </remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
-	/// *      >Git documentation about submodules</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
+	/// >Git documentation about submodules</a></seealso>
 	public class SubmoduleSyncCommand : GitCommand<IDictionary<string, string>>
 	{
 		private readonly ICollection<string> paths;

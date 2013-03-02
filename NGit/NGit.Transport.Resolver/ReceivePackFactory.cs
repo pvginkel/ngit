@@ -53,7 +53,6 @@ namespace NGit.Transport.Resolver
 	/// <see cref="NGit.Transport.ReceivePack">NGit.Transport.ReceivePack</see>
 	/// service instance.
 	/// </summary>
-	/// <?></?>
 	public abstract class ReceivePackFactory<C>
 	{
 		private sealed class _ReceivePackFactory_57 : ReceivePackFactory<C>

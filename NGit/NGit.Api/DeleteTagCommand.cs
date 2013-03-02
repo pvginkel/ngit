@@ -60,7 +60,7 @@ namespace NGit.Api
 	/// tags.
 	/// </remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html"
-	/// *      >Git documentation about Tag</a></seealso>
+	/// >Git documentation about Tag</a></seealso>
 	public class DeleteTagCommand : GitCommand<IList<string>>
 	{
 		private readonly ICollection<string> tags = new HashSet<string>();

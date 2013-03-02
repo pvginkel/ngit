@@ -53,7 +53,7 @@ namespace NGit.Transport
 	/// <summary>Describes a way to connect to another Git repository.</summary>
 	/// <remarks>
 	/// Describes a way to connect to another Git repository.
-	/// <p>
+	/// <p/>
 	/// Implementations of this class are typically immutable singletons held by
 	/// static class members, for example:
 	/// <pre>
@@ -66,7 +66,7 @@ namespace NGit.Transport
 	/// };
 	/// }
 	/// </pre>
-	/// <p>
+	/// <p/>
 	/// Applications may register additional protocols for use by JGit by calling
 	/// <see cref="Transport.Register(TransportProtocol)">Transport.Register(TransportProtocol)
 	/// 	</see>
@@ -75,7 +75,7 @@ namespace NGit.Transport
 	/// ClassLoader retains the TransportProtocol for the life of the application.
 	/// Using a static singleton pattern as above will ensure the protocol is valid
 	/// so long as the ClassLoader that defines it remains valid.
-	/// <p>
+	/// <p/>
 	/// Applications may automatically register additional protocols by filling in
 	/// the names of their TransportProtocol defining classes using the services file
 	/// <code>META-INF/services/org.eclipse.jgit.transport.Transport</code>
@@ -136,7 +136,7 @@ namespace NGit.Transport
 		/// <summary>Determine if this protocol can handle a particular URI.</summary>
 		/// <remarks>
 		/// Determine if this protocol can handle a particular URI.
-		/// <p>
+		/// <p/>
 		/// Implementations should try to avoid looking at the local filesystem, but
 		/// may look at implementation specific configuration options in the remote
 		/// block of
@@ -145,7 +145,7 @@ namespace NGit.Transport
 		/// <code>remoteName</code>
 		/// if the name
 		/// is non-null.
-		/// <p>
+		/// <p/>
 		/// The default implementation of this method matches the scheme against
 		/// <see cref="GetSchemes()">GetSchemes()</see>
 		/// , required fields against
@@ -165,7 +165,7 @@ namespace NGit.Transport
 		/// <summary>Determine if this protocol can handle a particular URI.</summary>
 		/// <remarks>
 		/// Determine if this protocol can handle a particular URI.
-		/// <p>
+		/// <p/>
 		/// Implementations should try to avoid looking at the local filesystem, but
 		/// may look at implementation specific configuration options in the remote
 		/// block of
@@ -174,7 +174,7 @@ namespace NGit.Transport
 		/// <code>remoteName</code>
 		/// if the name
 		/// is non-null.
-		/// <p>
+		/// <p/>
 		/// The default implementation of this method matches the scheme against
 		/// <see cref="GetSchemes()">GetSchemes()</see>
 		/// , required fields against
@@ -291,12 +291,12 @@ namespace NGit.Transport
 		/// <summary>Open a Transport instance to the other repository.</summary>
 		/// <remarks>
 		/// Open a Transport instance to the other repository.
-		/// <p>
+		/// <p/>
 		/// Implementations should avoid making remote connections until an operation
 		/// on the returned Transport is invoked, however they may fail fast here if
 		/// they know a connection is impossible, such as when using the local
 		/// filesystem and the target path does not exist.
-		/// <p>
+		/// <p/>
 		/// Implementations may access implementation-specific configuration options
 		/// within
 		/// <code>local.getConfig()</code>

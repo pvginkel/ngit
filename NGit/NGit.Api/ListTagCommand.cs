@@ -54,7 +54,7 @@ namespace NGit.Api
 	/// <summary>Used to obtain a list of tags.</summary>
 	/// <remarks>Used to obtain a list of tags.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html"
-	/// *      >Git documentation about Tag</a></seealso>
+	/// >Git documentation about Tag</a></seealso>
 	public class ListTagCommand : GitCommand<IList<Ref>>
 	{
 		/// <param name="repo"></param>

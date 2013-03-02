@@ -1071,11 +1071,10 @@ namespace NGit.Dircache
 		/// <code>ObjectReader</code>
 		/// for multiple
 		/// entries.
-		/// <p>
+		/// <p/>
 		/// TODO: this method works directly on File IO, we may need another
 		/// abstraction (like WorkingTreeIterator). This way we could tell e.g.
 		/// Eclipse that Files in the workspace got changed
-		/// </p>
 		/// </remarks>
 		/// <param name="repository"></param>
 		/// <param name="f">
@@ -1107,11 +1106,10 @@ namespace NGit.Dircache
 		/// in the index. The new content is first written to a new temporary file in
 		/// the same directory as the real file. Then that new file is renamed to the
 		/// final filename.
-		/// <p>
+		/// <p/>
 		/// TODO: this method works directly on File IO, we may need another
 		/// abstraction (like WorkingTreeIterator). This way we could tell e.g.
 		/// Eclipse that Files in the workspace got changed
-		/// </p>
 		/// </remarks>
 		/// <param name="repo"></param>
 		/// <param name="f">

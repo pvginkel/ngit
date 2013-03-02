@@ -71,7 +71,7 @@ namespace NGit.Util
 		/// <summary>Convert the input to lowercase.</summary>
 		/// <remarks>
 		/// Convert the input to lowercase.
-		/// <p>
+		/// <p/>
 		/// This method does not honor the JVM locale, but instead always behaves as
 		/// though it is in the US-ASCII locale. Only characters in the range 'A'
 		/// through 'Z' are converted. All other characters are left as-is, even if
@@ -87,7 +87,7 @@ namespace NGit.Util
 		/// <summary>Convert the input string to lower case, according to the "C" locale.</summary>
 		/// <remarks>
 		/// Convert the input string to lower case, according to the "C" locale.
-		/// <p>
+		/// <p/>
 		/// This method does not honor the JVM locale, but instead always behaves as
 		/// though it is in the US-ASCII locale. Only characters in the range 'A'
 		/// through 'Z' are converted, all other characters are left as-is, even if
@@ -111,7 +111,7 @@ namespace NGit.Util
 		/// <summary>Test if two strings are equal, ignoring case.</summary>
 		/// <remarks>
 		/// Test if two strings are equal, ignoring case.
-		/// <p>
+		/// <p/>
 		/// This method does not honor the JVM locale, but instead always behaves as
 		/// though it is in the US-ASCII locale.
 		/// </remarks>
@@ -141,7 +141,7 @@ namespace NGit.Util
 		/// <summary>Compare two strings, ignoring case.</summary>
 		/// <remarks>
 		/// Compare two strings, ignoring case.
-		/// <p>
+		/// <p/>
 		/// This method does not honor the JVM locale, but instead always behaves as
 		/// though it is in the US-ASCII locale.
 		/// </remarks>
@@ -168,7 +168,7 @@ namespace NGit.Util
 		/// <summary>Compare two strings, honoring case.</summary>
 		/// <remarks>
 		/// Compare two strings, honoring case.
-		/// <p>
+		/// <p/>
 		/// This method does not honor the JVM locale, but instead always behaves as
 		/// though it is in the US-ASCII locale.
 		/// </remarks>
@@ -228,7 +228,7 @@ namespace NGit.Util
 		/// <summary>Parse a string as a standard Git boolean value.</summary>
 		/// <remarks>
 		/// Parse a string as a standard Git boolean value.
-		/// <p>
+		/// <p/>
 		/// The terms
 		/// <code>yes</code>
 		/// ,
@@ -241,7 +241,7 @@ namespace NGit.Util
 		/// used to mean
 		/// <code>true</code>
 		/// .
-		/// <p>
+		/// <p/>
 		/// The terms
 		/// <code>no</code>
 		/// ,
@@ -254,7 +254,7 @@ namespace NGit.Util
 		/// used to mean
 		/// <code>false</code>
 		/// .
-		/// <p>
+		/// <p/>
 		/// Comparisons ignore case, via
 		/// <see cref="EqualsIgnoreCase(string, string)">EqualsIgnoreCase(string, string)</see>
 		/// .

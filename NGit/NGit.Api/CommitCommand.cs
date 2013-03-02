@@ -66,8 +66,8 @@ namespace NGit.Api
 	/// to finally execute the command.
 	/// </summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html"
-	/// *      >Git documentation about Commit</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html"
+	/// >Git documentation about Commit</a></seealso>
 	public class CommitCommand : GitCommand<RevCommit>
 	{
 		private PersonIdent author;

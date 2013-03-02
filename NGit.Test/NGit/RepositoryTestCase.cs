@@ -176,7 +176,7 @@ namespace NGit
 		/// By default information about path, mode, stage (if different from 0) is
 		/// included. A bitmask controls which additional info about
 		/// modificationTimes, smudge state and length is included.
-		/// <p>
+		/// <p/>
 		/// The format of the returned string is described with this BNF:
 		/// <pre>
 		/// result = ( "[" path mode stage? time? smudge? length? sha1? content? "]" )* .
@@ -278,7 +278,7 @@ namespace NGit
 		/// By default information about path, mode, stage (if different from 0) is
 		/// included. A bitmask controls which additional info about
 		/// modificationTimes, smudge state and length is included.
-		/// <p>
+		/// <p/>
 		/// The format of the returned string is described with this BNF:
 		/// <pre>
 		/// result = ( "[" path mode stage? time? smudge? length? sha1? content? "]" )* .
@@ -323,9 +323,9 @@ namespace NGit
 		/// <remarks>
 		/// Resets the index to represent exactly some filesystem content. E.g. the
 		/// following call will replace the index with the working tree content:
-		/// <p>
+		/// <p/>
 		/// <code>resetIndex(new FileSystemIterator(db))</code>
-		/// <p>
+		/// <p/>
 		/// This method can be used by testcases which first prepare a new commit
 		/// somewhere in the filesystem (e.g. in the working-tree) and then want to
 		/// have an index which matches their prepared content.
@@ -515,7 +515,7 @@ namespace NGit
 		/// <remarks>
 		/// Commit a file with the specified contents on the specified branch,
 		/// creating the branch if it didn't exist before.
-		/// <p>
+		/// <p/>
 		/// It switches back to the original branch after the commit if there was
 		/// one.
 		/// </remarks>

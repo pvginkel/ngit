@@ -56,12 +56,10 @@ namespace NGit
 	/// <summary>Base builder to customize repository construction.</summary>
 	/// <remarks>
 	/// Base builder to customize repository construction.
-	/// <p>
+	/// <p/>
 	/// Repository implementations may subclass this builder in order to add custom
 	/// repository detection methods.
 	/// </remarks>
-	/// <?></?>
-	/// <?></?>
 	/// <seealso cref="RepositoryBuilder">RepositoryBuilder</seealso>
 	/// <seealso cref="NGit.Storage.File.FileRepositoryBuilder">NGit.Storage.File.FileRepositoryBuilder
 	/// 	</seealso>
@@ -167,7 +165,7 @@ namespace NGit
 		/// <summary>Set the Git directory storing the repository metadata.</summary>
 		/// <remarks>
 		/// Set the Git directory storing the repository metadata.
-		/// <p>
+		/// <p/>
 		/// The meta directory stores the objects, references, and meta files like
 		/// <code>MERGE_HEAD</code>
 		/// , or the index file. If
@@ -226,7 +224,7 @@ namespace NGit
 		/// <summary>Add an alternate object directory to the search list.</summary>
 		/// <remarks>
 		/// Add an alternate object directory to the search list.
-		/// <p>
+		/// <p/>
 		/// This setting handles one alternate directory at a time, and is provided
 		/// to support
 		/// <code>GIT_ALTERNATE_OBJECT_DIRECTORIES</code>
@@ -254,7 +252,7 @@ namespace NGit
 		/// <summary>Add alternate object directories to the search list.</summary>
 		/// <remarks>
 		/// Add alternate object directories to the search list.
-		/// <p>
+		/// <p/>
 		/// This setting handles several alternate directories at once, and is
 		/// provided to support
 		/// <code>GIT_ALTERNATE_OBJECT_DIRECTORIES</code>
@@ -284,7 +282,7 @@ namespace NGit
 		/// <summary>Add alternate object directories to the search list.</summary>
 		/// <remarks>
 		/// Add alternate object directories to the search list.
-		/// <p>
+		/// <p/>
 		/// This setting handles several alternate directories at once, and is
 		/// provided to support
 		/// <code>GIT_ALTERNATE_OBJECT_DIRECTORIES</code>
@@ -325,7 +323,7 @@ namespace NGit
 		/// <summary>Force the repository to be treated as bare (have no working directory).</summary>
 		/// <remarks>
 		/// Force the repository to be treated as bare (have no working directory).
-		/// <p>
+		/// <p/>
 		/// If bare the working directory aspects of the repository won't be
 		/// configured, and will not be accessible.
 		/// </remarks>
@@ -402,7 +400,7 @@ namespace NGit
 		/// <summary>Set the local index file that is caching checked out file status.</summary>
 		/// <remarks>
 		/// Set the local index file that is caching checked out file status.
-		/// <p>
+		/// <p/>
 		/// The location of the index file tracking the status information for each
 		/// checked out file in
 		/// <code>workTree</code>
@@ -435,7 +433,7 @@ namespace NGit
 		/// <summary>Read standard Git environment variables and configure from those.</summary>
 		/// <remarks>
 		/// Read standard Git environment variables and configure from those.
-		/// <p>
+		/// <p/>
 		/// This method tries to read the standard Git environment variables, such as
 		/// <code>GIT_DIR</code>
 		/// and
@@ -457,7 +455,7 @@ namespace NGit
 		/// <summary>Read standard Git environment variables and configure from those.</summary>
 		/// <remarks>
 		/// Read standard Git environment variables and configure from those.
-		/// <p>
+		/// <p/>
 		/// This method tries to read the standard Git environment variables, such as
 		/// <code>GIT_DIR</code>
 		/// and
@@ -534,7 +532,7 @@ namespace NGit
 		/// <summary>Add a ceiling directory to the search limit list.</summary>
 		/// <remarks>
 		/// Add a ceiling directory to the search limit list.
-		/// <p>
+		/// <p/>
 		/// This setting handles one ceiling directory at a time, and is provided to
 		/// support
 		/// <code>GIT_CEILING_DIRECTORIES</code>
@@ -562,7 +560,7 @@ namespace NGit
 		/// <summary>Add ceiling directories to the search list.</summary>
 		/// <remarks>
 		/// Add ceiling directories to the search list.
-		/// <p>
+		/// <p/>
 		/// This setting handles several ceiling directories at once, and is provided
 		/// to support
 		/// <code>GIT_CEILING_DIRECTORIES</code>
@@ -592,7 +590,7 @@ namespace NGit
 		/// <summary>Add ceiling directories to the search list.</summary>
 		/// <remarks>
 		/// Add ceiling directories to the search list.
-		/// <p>
+		/// <p/>
 		/// This setting handles several ceiling directories at once, and is provided
 		/// to support
 		/// <code>GIT_CEILING_DIRECTORIES</code>
@@ -623,13 +621,13 @@ namespace NGit
 		/// Configure
 		/// <code>GIT_DIR</code>
 		/// by searching up the file system.
-		/// <p>
+		/// <p/>
 		/// Starts from the current working directory of the JVM and scans up through
 		/// the directory tree until a Git repository is found. Success can be
 		/// determined by checking for
 		/// <code>getGitDir() != null</code>
 		/// .
-		/// <p>
+		/// <p/>
 		/// The search can be limited to specific spaces of the local filesystem by
 		/// <see cref="BaseRepositoryBuilder{B, R}.AddCeilingDirectory(Sharpen.FilePath)">BaseRepositoryBuilder&lt;B, R&gt;.AddCeilingDirectory(Sharpen.FilePath)
 		/// 	</see>
@@ -657,13 +655,13 @@ namespace NGit
 		/// Configure
 		/// <code>GIT_DIR</code>
 		/// by searching up the file system.
-		/// <p>
+		/// <p/>
 		/// Starts from the supplied directory path and scans up through the parent
 		/// directory tree until a Git repository is found. Success can be determined
 		/// by checking for
 		/// <code>getGitDir() != null</code>
 		/// .
-		/// <p>
+		/// <p/>
 		/// The search can be limited to specific spaces of the local filesystem by
 		/// <see cref="BaseRepositoryBuilder{B, R}.AddCeilingDirectory(Sharpen.FilePath)">BaseRepositoryBuilder&lt;B, R&gt;.AddCeilingDirectory(Sharpen.FilePath)
 		/// 	</see>
@@ -721,7 +719,7 @@ namespace NGit
 		/// <summary>Guess and populate all parameters not already defined.</summary>
 		/// <remarks>
 		/// Guess and populate all parameters not already defined.
-		/// <p>
+		/// <p/>
 		/// If an option was not set, the setup method will try to default the option
 		/// based on other options. If insufficient information is available, an
 		/// exception is thrown to the caller.
@@ -750,7 +748,7 @@ namespace NGit
 		/// <summary>Create a repository matching the configuration in this builder.</summary>
 		/// <remarks>
 		/// Create a repository matching the configuration in this builder.
-		/// <p>
+		/// <p/>
 		/// If an option was not set, the build method will try to default the option
 		/// based on other options. If insufficient information is available, an
 		/// exception is thrown to the caller.
@@ -810,7 +808,7 @@ namespace NGit
 		/// <summary>Perform standard work-tree initialization.</summary>
 		/// <remarks>
 		/// Perform standard work-tree initialization.
-		/// <p>
+		/// <p/>
 		/// This is a method typically invoked inside of
 		/// <see cref="BaseRepositoryBuilder{B, R}.Setup()">BaseRepositoryBuilder&lt;B, R&gt;.Setup()
 		/// 	</see>
@@ -877,7 +875,7 @@ namespace NGit
 		/// <summary>Parse and load the repository specific configuration.</summary>
 		/// <remarks>
 		/// Parse and load the repository specific configuration.
-		/// <p>
+		/// <p/>
 		/// The default implementation reads
 		/// <code>gitDir/config</code>
 		/// , or returns an

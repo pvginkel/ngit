@@ -69,7 +69,7 @@ namespace NGit.Revwalk
 		/// until a commit that is reachable from <code>end</code> is encountered. In
 		/// other words, count the number of commits that are in <code>start</code>,
 		/// but not in <code>end</code>.
-		/// <p>
+		/// <p/>
 		/// Note that this method calls
 		/// <see cref="RevWalk.Reset()">RevWalk.Reset()</see>
 		/// at the beginning.
@@ -102,7 +102,7 @@ namespace NGit.Revwalk
 		/// that is reachable from <code>end</code> is encountered. In other words,
 		/// Find of commits that are in <code>start</code>, but not in
 		/// <code>end</code>.
-		/// <p>
+		/// <p/>
 		/// Note that this method calls
 		/// <see cref="RevWalk.Reset()">RevWalk.Reset()</see>
 		/// at the beginning.
@@ -140,11 +140,11 @@ namespace NGit.Revwalk
 		/// <summary>
 		/// Find the list of branches a given commit is reachable from when following
 		/// parent.s
-		/// <p>
+		/// <p/>
 		/// Note that this method calls
 		/// <see cref="RevWalk.Reset()">RevWalk.Reset()</see>
 		/// at the beginning.
-		/// <p>
+		/// <p/>
 		/// In order to improve performance this method assumes clock skew among
 		/// committers is never larger than 24 hours.
 		/// </summary>

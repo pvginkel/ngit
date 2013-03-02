@@ -78,7 +78,7 @@ namespace NGit
 		/// <summary>Immutable current state of the configuration data.</summary>
 		/// <remarks>
 		/// Immutable current state of the configuration data.
-		/// <p>
+		/// <p/>
 		/// This state is copy-on-write. It should always contain an immutable list
 		/// of the configuration keys/values.
 		/// </remarks>
@@ -89,7 +89,7 @@ namespace NGit
 		/// <summary>Magic value indicating a missing entry.</summary>
 		/// <remarks>
 		/// Magic value indicating a missing entry.
-		/// <p>
+		/// <p/>
 		/// This value is tested for reference equality in some contexts, so we
 		/// must ensure it is a special copy of the empty string.  It also must
 		/// be treated like the empty string.
@@ -349,7 +349,6 @@ namespace NGit
 
 		/// <summary>Parse an enumeration from the configuration.</summary>
 		/// <remarks>Parse an enumeration from the configuration.</remarks>
-		/// <?></?>
 		/// <param name="section">section the key is grouped within.</param>
 		/// <param name="subsection">subsection name, such a remote or branch name.</param>
 		/// <param name="name">name of the key to get.</param>
@@ -383,7 +382,6 @@ namespace NGit
 
 		/// <summary>Parse an enumeration from the configuration.</summary>
 		/// <remarks>Parse an enumeration from the configuration.</remarks>
-		/// <?></?>
 		/// <param name="all">
 		/// all possible values in the enumeration which should be
 		/// recognized. Typically
@@ -470,13 +468,13 @@ namespace NGit
 
 		/// <summary>
 		/// Get a list of string values
-		/// <p>
+		/// <p/>
 		/// If this instance was created with a base, the base's values are returned
 		/// first (if any).
 		/// </summary>
 		/// <remarks>
 		/// Get a list of string values
-		/// <p>
+		/// <p/>
 		/// If this instance was created with a base, the base's values are returned
 		/// first (if any).
 		/// </remarks>
@@ -555,7 +553,6 @@ namespace NGit
 
 		/// <summary>Obtain a handle to a parsed set of configuration values.</summary>
 		/// <remarks>Obtain a handle to a parsed set of configuration values.</remarks>
-		/// <?></?>
 		/// <param name="parser">
 		/// parser which can create the model if it is not already
 		/// available in this configuration file. The parser is also used
@@ -578,7 +575,7 @@ namespace NGit
 		/// <summary>Remove a cached configuration object.</summary>
 		/// <remarks>
 		/// Remove a cached configuration object.
-		/// <p>
+		/// <p/>
 		/// If the associated configuration object has not yet been cached, this
 		/// method has no effect.
 		/// </remarks>
@@ -592,7 +589,7 @@ namespace NGit
 		/// <summary>Adds a listener to be notified about changes.</summary>
 		/// <remarks>
 		/// Adds a listener to be notified about changes.
-		/// <p>
+		/// <p/>
 		/// Clients are supposed to remove the listeners after they are done with
 		/// them using the
 		/// <see cref="NGit.Events.ListenerHandle.Remove()">NGit.Events.ListenerHandle.Remove()
@@ -609,11 +606,11 @@ namespace NGit
 		/// <summary>Determine whether to issue change events for transient changes.</summary>
 		/// <remarks>
 		/// Determine whether to issue change events for transient changes.
-		/// <p>
+		/// <p/>
 		/// If <code>true</code> is returned (which is the default behavior),
 		/// <see cref="FireConfigChangedEvent()">FireConfigChangedEvent()</see>
 		/// will be called upon each change.
-		/// <p>
+		/// <p/>
 		/// Subclasses that override this to return <code>false</code> are
 		/// responsible for issuing
 		/// <see cref="FireConfigChangedEvent()">FireConfigChangedEvent()</see>
@@ -769,7 +766,6 @@ namespace NGit
 		/// name = value
 		/// </pre>
 		/// </remarks>
-		/// <?></?>
 		/// <param name="section">section name, e.g "branch"</param>
 		/// <param name="subsection">optional subsection value, e.g. a branch name</param>
 		/// <param name="name">parameter name, e.g. "filemode"</param>
@@ -1419,12 +1415,12 @@ namespace NGit
 		/// <summary>Parses a section of the configuration into an application model object.</summary>
 		/// <remarks>
 		/// Parses a section of the configuration into an application model object.
-		/// <p>
+		/// <p/>
 		/// Instances must implement hashCode and equals such that model objects can
 		/// be cached by using the
 		/// <code>SectionParser</code>
 		/// as a key of a HashMap.
-		/// <p>
+		/// <p/>
 		/// As the
 		/// <code>SectionParser</code>
 		/// itself is used as the key of the internal
@@ -1432,7 +1428,6 @@ namespace NGit
 		/// does not retain unnecessary application state which may cause memory to
 		/// be held longer than expected.
 		/// </remarks>
-		/// <?></?>
 		public interface SectionParser<T>
 		{
 			/// <summary>Create a model object from a configuration.</summary>

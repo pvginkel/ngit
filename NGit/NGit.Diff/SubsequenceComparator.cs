@@ -50,14 +50,13 @@ namespace NGit.Diff
 	/// Wrap another comparator for use with
 	/// <see cref="Subsequence{S}">Subsequence&lt;S&gt;</see>
 	/// .
-	/// <p>
+	/// <p/>
 	/// This comparator acts as a proxy for the real comparator, translating element
 	/// indexes on the fly by adding the subsequence's begin offset to them.
 	/// Comparators of this type must be used with a
 	/// <see cref="Subsequence{S}">Subsequence&lt;S&gt;</see>
 	/// .
 	/// </summary>
-	/// <?></?>
 	public sealed class SubsequenceComparator<S> : SequenceComparator<Subsequence<S>>
 		 where S:Sequence
 	{

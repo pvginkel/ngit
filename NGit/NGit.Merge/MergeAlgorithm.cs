@@ -86,7 +86,6 @@ namespace NGit.Merge
 		// list of edits
 		/// <summary>Does the three way merge between a common base and two sequences.</summary>
 		/// <remarks>Does the three way merge between a common base and two sequences.</remarks>
-		/// <?></?>
 		/// <param name="cmp">comparison method for this execution.</param>
 		/// <param name="base">the common base sequence</param>
 		/// <param name="ours">the first sequence to be merged</param>

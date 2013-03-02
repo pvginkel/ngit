@@ -67,7 +67,7 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html"
-	/// *      >Git documentation about Add</a></seealso>
+	/// >Git documentation about Add</a></seealso>
 	public class AddCommand : GitCommand<DirCache>
 	{
 		private ICollection<string> filepatterns;

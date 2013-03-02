@@ -55,7 +55,7 @@ namespace NGit.Transport
 	/// A command being processed by
 	/// <see cref="BaseReceivePack">BaseReceivePack</see>
 	/// .
-	/// <p>
+	/// <p/>
 	/// This command instance roughly translates to the server side representation of
 	/// the
 	/// <see cref="RemoteRefUpdate">RemoteRefUpdate</see>
@@ -255,7 +255,7 @@ namespace NGit.Transport
 		/// <summary>Update the type of this command by checking for fast-forward.</summary>
 		/// <remarks>
 		/// Update the type of this command by checking for fast-forward.
-		/// <p>
+		/// <p/>
 		/// If the command's current type is UPDATE, a merge test will be performed
 		/// using the supplied RevWalk to determine if
 		/// <see cref="GetOldId()">GetOldId()</see>
@@ -298,7 +298,7 @@ namespace NGit.Transport
 		/// <summary>Execute this command during a receive-pack session.</summary>
 		/// <remarks>
 		/// Execute this command during a receive-pack session.
-		/// <p>
+		/// <p/>
 		/// Sets the status of the command as a side effect.
 		/// </remarks>
 		/// <param name="rp">receive-pack session.</param>

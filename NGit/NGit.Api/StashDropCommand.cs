@@ -57,7 +57,7 @@ namespace NGit.Api
 {
 	/// <summary>Command class to delete a stashed commit reference</summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-stash.html"
-	/// *      >Git documentation about Stash</a></seealso>
+	/// >Git documentation about Stash</a></seealso>
 	/// <since>2.0</since>
 	public class StashDropCommand : GitCommand<ObjectId>
 	{
@@ -73,7 +73,7 @@ namespace NGit.Api
 		/// <summary>Set the stash reference to drop (0-based).</summary>
 		/// <remarks>
 		/// Set the stash reference to drop (0-based).
-		/// <p>
+		/// <p/>
 		/// This will default to drop the latest stashed commit (stash@{0}) if
 		/// unspecified
 		/// </remarks>

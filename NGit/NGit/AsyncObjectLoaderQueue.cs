@@ -52,7 +52,6 @@ namespace NGit
 	/// A queue may perform background decompression of objects and supply them
 	/// (possibly out-of-order) to the application.
 	/// </remarks>
-	/// <?></?>
 	public interface AsyncObjectLoaderQueue<T> : AsyncOperation where T:ObjectId
 	{
 		/// <summary>Position this queue onto the next available result.</summary>

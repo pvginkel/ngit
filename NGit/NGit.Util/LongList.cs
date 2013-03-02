@@ -46,8 +46,8 @@ using Sharpen;
 
 namespace NGit.Util
 {
-	/// <summary>A more efficient List<Long> using a primitive long array.</summary>
-	/// <remarks>A more efficient List<Long> using a primitive long array.</remarks>
+	/// <summary>A more efficient List&lt;Long&gt; using a primitive long array.</summary>
+	/// <remarks>A more efficient List&lt;Long&gt; using a primitive long array.</remarks>
 	public class LongList
 	{
 		private long[] entries;

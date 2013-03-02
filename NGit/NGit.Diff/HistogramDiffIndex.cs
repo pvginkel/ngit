@@ -52,14 +52,13 @@ namespace NGit.Diff
 	/// Support
 	/// <see cref="HistogramDiff">HistogramDiff</see>
 	/// by computing occurrence counts of elements.
-	/// <p>
+	/// <p/>
 	/// Each element in the range being considered is put into a hash table, tracking
 	/// the number of times that distinct element appears in the sequence. Once all
 	/// elements have been inserted from sequence A, each element of sequence B is
 	/// probed in the hash table and the longest common subsequence with the lowest
 	/// occurrence count in A is used as the result.
 	/// </summary>
-	/// <?></?>
 	internal sealed class HistogramDiffIndex<S> where S:Sequence
 	{
 		private const int REC_NEXT_SHIFT = 28 + 8;

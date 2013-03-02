@@ -57,7 +57,7 @@ namespace NGit.Api
 {
 	/// <summary>Clone a repository into a new working directory</summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html"
-	/// *      >Git documentation about Clone</a></seealso>
+	/// >Git documentation about Clone</a></seealso>
 	public class CloneCommand : TransportCommand<NGit.Api.CloneCommand, Git>
 	{
 		private string uri;

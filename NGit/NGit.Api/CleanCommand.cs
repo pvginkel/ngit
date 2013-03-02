@@ -53,8 +53,8 @@ namespace NGit.Api
 {
 	/// <summary>Remove untracked files from the working tree</summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-clean.html"
-	/// *      >Git documentation about Clean</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-clean.html"
+	/// >Git documentation about Clean</a></seealso>
 	public class CleanCommand : GitCommand<ICollection<string>>
 	{
 		private ICollection<string> paths = Sharpen.Collections.EmptySet<string>();

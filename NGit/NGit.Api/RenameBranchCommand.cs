@@ -53,8 +53,8 @@ namespace NGit.Api
 	/// <summary>Used to rename branches.</summary>
 	/// <remarks>Used to rename branches.</remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
-	/// *      >Git documentation about Branch</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
+	/// >Git documentation about Branch</a></seealso>
 	public class RenameBranchCommand : GitCommand<Ref>
 	{
 		private string oldName;

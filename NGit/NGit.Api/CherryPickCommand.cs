@@ -68,8 +68,8 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html"
-	/// *      >Git documentation about cherry-pick</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html"
+	/// >Git documentation about cherry-pick</a></seealso>
 	public class CherryPickCommand : GitCommand<CherryPickResult>
 	{
 		private IList<Ref> commits = new List<Ref>();

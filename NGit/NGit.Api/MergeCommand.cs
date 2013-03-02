@@ -69,7 +69,7 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html"
-	/// *      >Git documentation about Merge</a></seealso>
+	/// >Git documentation about Merge</a></seealso>
 	public class MergeCommand : GitCommand<MergeCommandResult>
 	{
 		private MergeStrategy mergeStrategy = MergeStrategy.RESOLVE;
@@ -392,7 +392,7 @@ namespace NGit.Api
 		/// If <code>true</code>, will prepare the next commit in working tree and
 		/// index as if a real merge happened, but do not make the commit or move the
 		/// HEAD. Otherwise, perform the merge and commit the result.
-		/// <p>
+		/// <p/>
 		/// In case the merge was successful but this flag was set to
 		/// <code>true</code> a
 		/// <see cref="MergeCommandResult">MergeCommandResult</see>

@@ -57,7 +57,7 @@ namespace NGit.Nls
 	/// <remarks>
 	/// Base class for all translation bundles that provides injection of translated
 	/// texts into public String fields.
-	/// <p>
+	/// <p/>
 	/// The usage pattern is shown with the following example. First define a new
 	/// translation bundle:
 	/// <pre>
@@ -103,7 +103,7 @@ namespace NGit.Nls
 	/// <see cref="EffectiveLocale()">EffectiveLocale()</see>
 	/// method can be used to determine whether the
 	/// bundle really corresponds to the requested locale or is a fallback.
-	/// <p>
+	/// <p/>
 	/// To load a String from a resource bundle property file this class uses the
 	/// <see cref="Sharpen.ResourceBundle.GetString(string)">Sharpen.ResourceBundle.GetString(string)
 	/// 	</see>
@@ -111,15 +111,15 @@ namespace NGit.Nls
 	/// <see cref="Sharpen.MissingResourceException">Sharpen.MissingResourceException</see>
 	/// and this class is not making any effort to
 	/// catch and/or translate this exception.
-	/// <p>
+	/// <p/>
 	/// To define a concrete translation bundle one has to:
 	/// <ul>
-	/// <li>extend this class
-	/// <li>define a public static get() method like in the example above
-	/// <li>define public static String fields for each text message
-	/// <li>make sure the translation bundle class provide public no arg constructor
+	/// <li>extend this class</li>
+	/// <li>define a public static get() method like in the example above</li>
+	/// <li>define public static String fields for each text message</li>
+	/// <li>make sure the translation bundle class provide public no arg constructor</li>
 	/// <li>provide one or more resource bundle property files in the same package
-	/// where the translation bundle class resides
+	/// where the translation bundle class resides</li>
 	/// </ul>
 	/// </remarks>
 	public abstract class TranslationBundle
@@ -147,7 +147,7 @@ namespace NGit.Nls
 		/// <remarks>
 		/// Injects locale specific text in all instance fields of this instance.
 		/// Only public instance fields of type <code>String</code> are considered.
-		/// <p>
+		/// <p/>
 		/// The name of this (sub)class plus the given <code>locale</code> parameter
 		/// define the resource bundle to be loaded. In other words the
 		/// <code>this.getClass().getName()</code> is used as the
@@ -156,7 +156,7 @@ namespace NGit.Nls
 		/// 	">Sharpen.ResourceBundle.GetBundle(string, System.Globalization.CultureInfo)</see>
 		/// parameter to load the
 		/// resource bundle.
-		/// <p>
+		/// <p/>
 		/// </remarks>
 		/// <param name="locale">defines the locale to be used when loading the resource bundle
 		/// 	</param>

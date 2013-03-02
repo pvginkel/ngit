@@ -774,11 +774,11 @@ namespace NGit.Storage.File
 		/// <summary>Create a chain of commits of given depth.</summary>
 		/// <remarks>
 		/// Create a chain of commits of given depth.
-		/// <p>
+		/// <p/>
 		/// Each commit contains one file named "a" containing the index of the
 		/// commit in the chain as its content. The created commit chain is
 		/// referenced from any ref.
-		/// <p>
+		/// <p/>
 		/// A chain of depth = N will create 3*N objects in Gits object database. For
 		/// each depth level three objects are created: the commit object, the
 		/// top-level tree object and a blob for the content of the file "a".

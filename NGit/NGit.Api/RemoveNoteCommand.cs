@@ -54,7 +54,7 @@ namespace NGit.Api
 	/// <summary>Remove object notes.</summary>
 	/// <remarks>Remove object notes.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-notes.html"
-	/// *      >Git documentation about Notes</a></seealso>
+	/// >Git documentation about Notes</a></seealso>
 	public class RemoveNoteCommand : GitCommand<Note>
 	{
 		private RevObject id;

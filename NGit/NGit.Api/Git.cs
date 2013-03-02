@@ -52,11 +52,11 @@ namespace NGit.Api
 	/// <summary>Offers a "GitPorcelain"-like API to interact with a git repository.</summary>
 	/// <remarks>
 	/// Offers a "GitPorcelain"-like API to interact with a git repository.
-	/// <p>
+	/// <p/>
 	/// The GitPorcelain commands are described in the &lt;a href=
 	/// "http://www.kernel.org/pub/software/scm/git/docs/git.html#_high_level_commands_porcelain"
-	/// &gt;Git Documentation</a>.
-	/// <p>
+	/// &gt;Git Documentation&lt;/a&gt;.
+	/// <p/>
 	/// This class only offers methods to construct so-called command classes. Each
 	/// GitPorcelain command is represented by one command class.<br />
 	/// Example: this class offers a
@@ -80,7 +80,7 @@ namespace NGit.Api
 	/// All mandatory parameters for commands have to be specified in the methods of
 	/// this class, the optional parameters have to be specified by the
 	/// setter-methods of the Command class.
-	/// <p>
+	/// <p/>
 	/// This class is intended to be used internally (e.g. by JGit tests) or by
 	/// external components (EGit, third-party tools) when they need exactly the
 	/// functionality of a GitPorcelain command. There are use-cases where this class
@@ -152,8 +152,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html"
-		/// *      >Git documentation about clone</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-clone.html"
+		/// >Git documentation about clone</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="CloneCommand">CloneCommand</see>
@@ -173,8 +173,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html"
-		/// *      >Git documentation about init</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-init.html"
+		/// >Git documentation about init</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="InitCommand">InitCommand</see>
@@ -215,8 +215,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html"
-		/// *      >Git documentation about Commit</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-commit.html"
+		/// >Git documentation about Commit</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="CommitCommand">CommitCommand</see>
@@ -236,8 +236,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html"
-		/// *      >Git documentation about Log</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-log.html"
+		/// >Git documentation about Log</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="LogCommand">LogCommand</see>
@@ -257,8 +257,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html"
-		/// *      >Git documentation about Merge</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-merge.html"
+		/// >Git documentation about Merge</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="MergeCommand">MergeCommand</see>
@@ -342,8 +342,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html"
-		/// *      >Git documentation about Add</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-add.html"
+		/// >Git documentation about Add</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="AddCommand">AddCommand</see>
@@ -363,8 +363,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html"
-		/// *      >Git documentation about Tag</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-tag.html"
+		/// >Git documentation about Tag</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="TagCommand">TagCommand</see>
@@ -384,8 +384,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html"
-		/// *      >Git documentation about Fetch</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html"
+		/// >Git documentation about Fetch</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="FetchCommand">FetchCommand</see>
@@ -405,8 +405,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html"
-		/// *      >Git documentation about Push</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-push.html"
+		/// >Git documentation about Push</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="PushCommand">PushCommand</see>
@@ -426,8 +426,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html"
-		/// *      >Git documentation about cherry-pick</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-cherry-pick.html"
+		/// >Git documentation about cherry-pick</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="CherryPickCommand">CherryPickCommand</see>
@@ -447,8 +447,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html"
-		/// *      >Git documentation about reverting changes</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-revert.html"
+		/// >Git documentation about reverting changes</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="RevertCommand">RevertCommand</see>
@@ -468,8 +468,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html"
-		/// *      >Git documentation about rebase</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-rebase.html"
+		/// >Git documentation about rebase</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="RebaseCommand">RebaseCommand</see>
@@ -489,8 +489,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-rm.html"
-		/// *      >Git documentation about rm</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-rm.html"
+		/// >Git documentation about rm</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="RmCommand">RmCommand</see>
@@ -510,8 +510,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html"
-		/// *      >Git documentation about checkout</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-checkout.html"
+		/// >Git documentation about checkout</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="CheckoutCommand">CheckoutCommand</see>
@@ -531,8 +531,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html"
-		/// *      >Git documentation about reset</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html"
+		/// >Git documentation about reset</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="ResetCommand">ResetCommand</see>
@@ -552,8 +552,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html"
-		/// *      >Git documentation about status</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-status.html"
+		/// >Git documentation about status</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="StatusCommand">StatusCommand</see>
@@ -613,8 +613,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html"
-		/// *      >Git documentation about ls-remote</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-ls-remote.html"
+		/// >Git documentation about ls-remote</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="LsRemoteCommand">LsRemoteCommand</see>
@@ -634,8 +634,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-clean.html"
-		/// *      >Git documentation about Clean</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-clean.html"
+		/// >Git documentation about Clean</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="CleanCommand">CleanCommand</see>
@@ -655,8 +655,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-blame.html"
-		/// *      >Git documentation about Blame</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-blame.html"
+		/// >Git documentation about Blame</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="BlameCommand">BlameCommand</see>
@@ -676,8 +676,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-reflog.html"
-		/// *      >Git documentation about reflog</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-reflog.html"
+		/// >Git documentation about reflog</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="ReflogCommand">ReflogCommand</see>
@@ -697,8 +697,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html"
-		/// *      >Git documentation about diff</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-diff.html"
+		/// >Git documentation about diff</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="DiffCommand">DiffCommand</see>
@@ -852,8 +852,8 @@ namespace NGit.Api
 		/// command
 		/// </summary>
 		/// <seealso><a
-		/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-apply.html"
-		/// *      >Git documentation about apply</a></seealso>
+		/// href="http://www.kernel.org/pub/software/scm/git/docs/git-apply.html"
+		/// >Git documentation about apply</a></seealso>
 		/// <returns>
 		/// a
 		/// <see cref="ApplyCommand">ApplyCommand</see>

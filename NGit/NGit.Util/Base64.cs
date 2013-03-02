@@ -50,13 +50,12 @@ namespace NGit.Util
 	/// <summary>Encodes and decodes to and from Base64 notation.</summary>
 	/// <remarks>
 	/// Encodes and decodes to and from Base64 notation.
-	/// <p>
+	/// <p/>
 	/// I am placing this code in the Public Domain. Do with it as you will. This
 	/// software comes with no guarantees or warranties but with plenty of
 	/// well-wishing instead! Please visit &lt;a
-	/// href="http://iharder.net/base64"&gt;http://iharder.net/base64</a> periodically
+	/// href="http://iharder.net/base64"&gt;http://iharder.net/base64&lt;/a&gt; periodically
 	/// to check for updates or to contribute improvements.
-	/// </p>
 	/// </remarks>
 	/// <author>Robert Harder</author>
 	/// <author>rob@iharder.net</author>

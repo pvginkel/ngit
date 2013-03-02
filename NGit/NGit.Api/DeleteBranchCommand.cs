@@ -63,8 +63,8 @@ namespace NGit.Api
 	/// tracking branches are simply deleted just like local branches.
 	/// </remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
-	/// *      >Git documentation about Branch</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-branch.html"
+	/// >Git documentation about Branch</a></seealso>
 	public class DeleteBranchCommand : GitCommand<IList<string>>
 	{
 		private readonly ICollection<string> branchNames = new HashSet<string>();

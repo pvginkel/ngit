@@ -57,8 +57,8 @@ namespace NGit.Transport
 	/// <remarks>
 	/// This URI like construct used for referencing Git archives over the net, as
 	/// well as locally stored archives. It is similar to RFC 2396 URI's, but also
-	/// support SCP and the malformed file://<path> syntax (as opposed to the correct
-	/// file:<path> syntax.
+	/// support SCP and the malformed file://&lt;path&gt; syntax (as opposed to the correct
+	/// file:&lt;path&gt; syntax.
 	/// </remarks>
 	[System.Serializable]
 	public class URIish
@@ -130,7 +130,7 @@ namespace NGit.Transport
 		private const long serialVersionUID = 1L;
 
 		/// <summary>
-		/// A pattern matching standard URI: </br>
+		/// A pattern matching standard URI: <br/>
 		/// <code>scheme "://" user_password? hostname? portnumber? path</code>
 		/// </summary>
 		private static readonly Sharpen.Pattern FULL_URI = Sharpen.Pattern.Compile("^" + 

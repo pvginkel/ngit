@@ -58,7 +58,7 @@ namespace NGit.Transport
 	/// <see cref="PushProcess">PushProcess</see>
 	/// class,
 	/// being read-only for client.
-	/// <p>
+	/// <p/>
 	/// Client can create instances of this class directly, basing on user
 	/// specification and advertised refs (
 	/// <see cref="Connection">Connection</see>
@@ -70,7 +70,6 @@ namespace NGit.Transport
 	/// 	">Transport.Push(NGit.ProgressMonitor, System.Collections.Generic.ICollection&lt;E&gt;)
 	/// 	</see>
 	/// method.
-	/// </p>
 	/// </remarks>
 	public class RemoteRefUpdate
 	{

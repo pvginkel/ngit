@@ -53,7 +53,7 @@ namespace NGit
 	/// <remarks>
 	/// A convenient base class which provides empty method bodies for all
 	/// ProgressMonitor methods.
-	/// <p>
+	/// <p/>
 	/// Could be used in scenarios when only some of the progress notifications are
 	/// important and others can be ignored.
 	/// </remarks>

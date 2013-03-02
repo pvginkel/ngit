@@ -63,8 +63,8 @@ namespace NGit.Api
 	/// and .gitmodules file to the index.
 	/// </remarks>
 	/// <seealso><a
-	/// *      href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
-	/// *      >Git documentation about submodules</a></seealso>
+	/// href="http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html"
+	/// >Git documentation about submodules</a></seealso>
 	public class SubmoduleAddCommand : TransportCommand<NGit.Api.SubmoduleAddCommand, 
 		Repository>
 	{

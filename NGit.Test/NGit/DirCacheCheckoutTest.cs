@@ -179,7 +179,7 @@ namespace NGit
 		/// <summary>Reset hard from unclean condition.</summary>
 		/// <remarks>
 		/// Reset hard from unclean condition.
-		/// <p>
+		/// <p/>
 		/// WorkDir: Empty <br/>
 		/// Index: f/g <br/>
 		/// Merge: x

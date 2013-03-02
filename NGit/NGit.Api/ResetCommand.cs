@@ -69,7 +69,7 @@ namespace NGit.Api
 	/// )
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-reset.html"
-	/// *      >Git documentation about Reset</a></seealso>
+	/// >Git documentation about Reset</a></seealso>
 	public class ResetCommand : GitCommand<Ref>
 	{
 		/// <summary>Kind of reset</summary>

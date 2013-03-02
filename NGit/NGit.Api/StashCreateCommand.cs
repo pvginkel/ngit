@@ -65,7 +65,7 @@ namespace NGit.Api
 	/// commit.
 	/// </remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-stash.html"
-	/// *      >Git documentation about Stash</a></seealso>
+	/// >Git documentation about Stash</a></seealso>
 	/// <since>2.0</since>
 	public class StashCreateCommand : GitCommand<RevCommit>
 	{
@@ -90,13 +90,13 @@ namespace NGit.Api
 
 		/// <summary>
 		/// Set the message used when committing index changes
-		/// <p>
+		/// <p/>
 		/// The message will be formatted with the current branch, abbreviated commit
 		/// id, and short commit message when used.
 		/// </summary>
 		/// <remarks>
 		/// Set the message used when committing index changes
-		/// <p>
+		/// <p/>
 		/// The message will be formatted with the current branch, abbreviated commit
 		/// id, and short commit message when used.
 		/// </remarks>
@@ -113,13 +113,13 @@ namespace NGit.Api
 
 		/// <summary>
 		/// Set the message used when committing working directory changes
-		/// <p>
+		/// <p/>
 		/// The message will be formatted with the current branch, abbreviated commit
 		/// id, and short commit message when used.
 		/// </summary>
 		/// <remarks>
 		/// Set the message used when committing working directory changes
-		/// <p>
+		/// <p/>
 		/// The message will be formatted with the current branch, abbreviated commit
 		/// id, and short commit message when used.
 		/// </remarks>
@@ -149,7 +149,7 @@ namespace NGit.Api
 
 		/// <summary>
 		/// Set the reference to update with the stashed commit id
-		/// <p>
+		/// <p/>
 		/// This value defaults to
 		/// <see cref="NGit.Constants.R_STASH">NGit.Constants.R_STASH</see>
 		/// </summary>

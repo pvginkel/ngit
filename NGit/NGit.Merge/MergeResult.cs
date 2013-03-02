@@ -61,12 +61,11 @@ namespace NGit.Merge
 	/// reported as multiple chunks, one for each conflicting range. The first chunk
 	/// for a conflict is marked specially to distinguish the border between two
 	/// consecutive conflicts.
-	/// <p>
+	/// <p/>
 	/// This class does not know anything about how to present the merge result to
 	/// the end-user. MergeFormatters have to be used to construct something human
 	/// readable.
 	/// </summary>
-	/// <?></?>
 	public class MergeResult<S> : Iterable<MergeChunk> where S:Sequence
 	{
 		private IList<S> sequences;

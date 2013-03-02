@@ -46,8 +46,8 @@ using Sharpen;
 
 namespace NGit.Util
 {
-	/// <summary>A more efficient List<Integer> using a primitive integer array.</summary>
-	/// <remarks>A more efficient List<Integer> using a primitive integer array.</remarks>
+	/// <summary>A more efficient List&lt;Integer&gt; using a primitive integer array.</summary>
+	/// <remarks>A more efficient List&lt;Integer&gt; using a primitive integer array.</remarks>
 	public class IntList
 	{
 		private int[] entries;

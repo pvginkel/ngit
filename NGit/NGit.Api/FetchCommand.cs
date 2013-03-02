@@ -63,7 +63,7 @@ namespace NGit.Api
 	/// to finally execute the command.
 	/// </summary>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-fetch.html"
-	/// *      >Git documentation about Fetch</a></seealso>
+	/// >Git documentation about Fetch</a></seealso>
 	public class FetchCommand : TransportCommand<NGit.Api.FetchCommand, FetchResult>
 	{
 		private string remote = Constants.DEFAULT_REMOTE_NAME;

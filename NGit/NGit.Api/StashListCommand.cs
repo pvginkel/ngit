@@ -56,7 +56,7 @@ namespace NGit.Api
 	/// <summary>Command class to list the stashed commits in a repository.</summary>
 	/// <remarks>Command class to list the stashed commits in a repository.</remarks>
 	/// <seealso><a href="http://www.kernel.org/pub/software/scm/git/docs/git-stash.html"
-	/// *      >Git documentation about Stash</a></seealso>
+	/// >Git documentation about Stash</a></seealso>
 	public class StashListCommand : GitCommand<ICollection<RevCommit>>
 	{
 		/// <summary>Create a new stash list command</summary>

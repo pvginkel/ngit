@@ -53,7 +53,6 @@ namespace NGit.Revwalk
 	/// <see cref="RevObject">RevObject</see>
 	/// subclasses.
 	/// </summary>
-	/// <?></?>
 	public class RevObjectList<E> : AbstractList<E> where E:RevObject
 	{
 		internal const int BLOCK_SHIFT = 8;
@@ -63,7 +62,7 @@ namespace NGit.Revwalk
 		/// <summary>Items stored in this list.</summary>
 		/// <remarks>
 		/// Items stored in this list.
-		/// <p>
+		/// <p/>
 		/// If
 		/// <see cref="RevObjectListBlock.shift">RevObjectListBlock.shift</see>
 		/// = 0 this block holds the list elements; otherwise
