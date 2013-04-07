@@ -1089,21 +1089,41 @@ namespace Mono.Math {
 #if true
 			public BigInteger Pow (BigInteger a, BigInteger k)
 			{
-				BigInteger b = new BigInteger (1);
-				if (k == 0)
-					return b;
+                // The BigInteger.Pow implementation of Mono.Security has a
+                // bug which is described in http://bugzilla.novell.com/show_bug.cgi?id=587994.
+                // As a work around, we use the .NET BigInteger implementation
+                // to perform the Pow operation.
 
-				BigInteger A = a;
-				if (k.TestBit (0))
-					b = a;
+                return DecodeBigInteger(System.Numerics.BigInteger.ModPow(
+                    EncodeBigInteger(a),
+                    EncodeBigInteger(k),
+                    EncodeBigInteger(mod)
+                ));
+            }
 
-				for (int i = 1; i < k.BitCount (); i++) {
-					A = Multiply (A, A);
-					if (k.TestBit (i))
-						b = Multiply (A, b);
-				}
-				return b;
-			}
+            private static BigInteger DecodeBigInteger(System.Numerics.BigInteger v)
+            {
+                var bytes = v.ToByteArray();
+
+                if (bytes[bytes.Length - 1] == 0 && (bytes[bytes.Length - 2] & 128) != 0)
+                    Array.Resize(ref bytes, bytes.Length - 1);
+
+                Array.Reverse(bytes);
+
+                return new BigInteger(bytes);
+            }
+
+            private static System.Numerics.BigInteger EncodeBigInteger(BigInteger v)
+            {
+                var bytes = v.GetBytes();
+
+                Array.Reverse(bytes);
+
+                if ((bytes[bytes.Length - 1] & 128) != 0)
+                    Array.Resize(ref bytes, bytes.Length + 1);
+
+                return new System.Numerics.BigInteger(bytes);
+            }
 #else
 			public BigInteger Pow (BigInteger b, BigInteger exp)
 			{
