@@ -36,9 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Mono.Security">
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
@@ -211,6 +208,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Mono.Security\Mono.Security-net_4_0.csproj">
+      <Project>{a2daeb75-c366-4b5f-8bdd-9b3234a1abfa}</Project>
+      <Name>Mono.Security-net_4_0</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sharpen\Sharpen.csproj">
       <Project>{72944A6C-45FF-4EF8-B349-8C9CABF519D4}</Project>
       <Name>Sharpen</Name>
