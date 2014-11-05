@@ -89,7 +89,7 @@ namespace NGit.Revwalk
 	/// <see cref="Next()">Next()</see>
 	/// does not.
 	/// </remarks>
-	public class RevWalk : Iterable<RevCommit>
+	public class RevWalk : Iterable<RevCommit>, IDisposable
 	{
 		private const int MB = 1 << 20;
 
@@ -255,6 +255,11 @@ namespace NGit.Revwalk
 		{
 			reader.Release();
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 
 		/// <summary>Mark a commit to start graph traversal from.</summary>
 		/// <remarks>
@@ -1086,6 +1091,11 @@ namespace NGit.Revwalk
 			{
 			}
 
+            void IDisposable.Dispose()
+            {
+                Release();
+            }
+
 			private readonly Sharpen.Iterator<RevObject> objItr;
 		}
 
@@ -1151,6 +1161,11 @@ namespace NGit.Revwalk
 			{
 				lItr.Release();
 			}
+
+            void IDisposable.Dispose()
+            {
+                Release();
+            }
 
 			private readonly RevWalk _enclosing;
 

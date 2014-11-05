@@ -62,7 +62,7 @@ namespace NGit.Storage.File
 	/// delta packed format yielding high compression of lots of object where some
 	/// objects are similar.
 	/// </remarks>
-	public class PackFile : Iterable<PackIndex.MutableEntry>
+	public class PackFile : Iterable<PackIndex.MutableEntry>, IDisposable
 	{
 		private sealed class _IComparer_89 : IComparer<NGit.Storage.File.PackFile>
 		{
@@ -278,6 +278,11 @@ namespace NGit.Storage.File
 				reverseIdx = null;
 			}
 		}
+
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
 
 		/// <summary>
 		/// Provide iterator over entries in associated pack index, that should also

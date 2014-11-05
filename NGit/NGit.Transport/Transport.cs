@@ -68,7 +68,7 @@ namespace NGit.Transport
 	/// Transport instances and the connections they create are not thread-safe.
 	/// Callers must ensure a transport is accessed by only one thread at a time.
 	/// </remarks>
-	public abstract class Transport
+	public abstract class Transport : IDisposable
 	{
 		/// <summary>Type of operation a Transport is being opened for.</summary>
 		/// <remarks>Type of operation a Transport is being opened for.</remarks>
@@ -1417,6 +1417,11 @@ namespace NGit.Transport
 		/// remote repository is actually local (same system) this method must close
 		/// any open file handles used to read the "remote" repository.
 		/// </remarks>
-		public abstract void Close();
+        public abstract void Close();
+
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
 	}
 }

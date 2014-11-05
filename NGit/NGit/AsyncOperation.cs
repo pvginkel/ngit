@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using NGit;
 using Sharpen;
 
@@ -53,7 +54,7 @@ namespace NGit
 	/// may be used to attempt cancellation of the operation if the caller does not
 	/// wish to continue.
 	/// </remarks>
-	public interface AsyncOperation
+	public interface AsyncOperation : IDisposable
 	{
 		/// <summary>Cancels the running task.</summary>
 		/// <remarks>

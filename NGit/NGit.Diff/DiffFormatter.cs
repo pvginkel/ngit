@@ -61,7 +61,7 @@ namespace NGit.Diff
 {
 	/// <summary>Format a Git style patch script.</summary>
 	/// <remarks>Format a Git style patch script.</remarks>
-	public class DiffFormatter
+	public class DiffFormatter : IDisposable
 	{
 		private const int DEFAULT_BINARY_FILE_THRESHOLD = PackConfig.DEFAULT_BIG_FILE_THRESHOLD;
 
@@ -361,6 +361,11 @@ namespace NGit.Diff
 				reader.Release();
 			}
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 
 		/// <summary>Determine the differences between two trees.</summary>
 		/// <remarks>

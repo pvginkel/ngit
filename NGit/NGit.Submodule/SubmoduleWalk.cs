@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using System.IO;
 using NGit;
 using NGit.Dircache;
@@ -55,7 +56,7 @@ using Sharpen;
 namespace NGit.Submodule
 {
 	/// <summary>Walker that visits all submodule entries found in a tree</summary>
-	public class SubmoduleWalk
+	public class SubmoduleWalk : IDisposable
 	{
 		/// <summary>
 		/// Create a generator to walk over the submodule entries currently in the
@@ -708,5 +709,10 @@ namespace NGit.Submodule
 		{
 			walk.Release();
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 	}
 }

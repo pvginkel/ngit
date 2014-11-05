@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using System.Collections.Generic;
 using NGit;
 using NGit.Errors;
@@ -59,7 +60,7 @@ namespace NGit
 	/// <see cref="NGit.Storage.Pack.ObjectReuseAsIs">NGit.Storage.Pack.ObjectReuseAsIs</see>
 	/// .
 	/// </summary>
-	public abstract class ObjectReader
+	public abstract class ObjectReader : IDisposable
 	{
 		/// <summary>Type hint indicating the caller doesn't know the type.</summary>
 		/// <remarks>Type hint indicating the caller doesn't know the type.</remarks>
@@ -322,6 +323,11 @@ namespace NGit
 			{
 			}
 
+            void IDisposable.Dispose()
+            {
+                Release();
+            }
+
 			private readonly ObjectReader _enclosing;
 
 			private readonly Iterator<T> idItr;
@@ -429,6 +435,11 @@ namespace NGit
 			{
 			}
 
+            void IDisposable.Dispose()
+            {
+                Release();
+            }
+
 			private readonly ObjectReader _enclosing;
 
 			private readonly Iterator<T> idItr;
@@ -488,5 +499,10 @@ namespace NGit
 		{
 		}
 		// Do nothing.
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 	}
 }

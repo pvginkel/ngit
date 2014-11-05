@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using NGit;
 using NGit.Revwalk;
 using Sharpen;
@@ -70,7 +71,7 @@ namespace NGit.Revwalk
 	/// PackWriter will include all of those objects, even if the client did not ask
 	/// for them, or should not have been given the objects.
 	/// </remarks>
-	public abstract class ObjectListIterator
+	public abstract class ObjectListIterator : IDisposable
 	{
 		private readonly ObjectWalk walk;
 
@@ -134,5 +135,10 @@ namespace NGit.Revwalk
 		/// <summary>Release the resources associated with this iterator.</summary>
 		/// <remarks>Release the resources associated with this iterator.</remarks>
 		public abstract void Release();
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 	}
 }

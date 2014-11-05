@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using System.Collections.Generic;
 using NGit;
 using NGit.Transport;
@@ -57,7 +58,7 @@ namespace NGit.Transport
 	/// should be closed - this is a connection client responsibility.
 	/// </remarks>
 	/// <seealso cref="Transport">Transport</seealso>
-	public interface Connection
+	public interface Connection : IDisposable
 	{
 		/// <summary>
 		/// Get the complete map of refs advertised as available for fetching or

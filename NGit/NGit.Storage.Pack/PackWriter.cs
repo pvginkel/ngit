@@ -100,7 +100,7 @@ namespace NGit.Storage.Pack
 	/// one instance per created pack. Subsequent calls to writePack result in
 	/// undefined behavior.
 	/// </remarks>
-	public class PackWriter
+	public class PackWriter : IDisposable
 	{
 		private const int PACK_VERSION_GENERATED = 2;
 
@@ -1060,6 +1060,11 @@ namespace NGit.Storage.Pack
 			}
 			Sharpen.Collections.Remove(instances, selfRef);
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 
 		/// <exception cref="System.IO.IOException"></exception>
 		private void SearchForReuse(ProgressMonitor monitor)

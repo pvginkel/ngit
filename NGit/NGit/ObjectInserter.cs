@@ -65,7 +65,7 @@ namespace NGit
 	/// prior to updating references or
 	/// otherwise making the returned ObjectIds visible to other code.
 	/// </summary>
-	public abstract class ObjectInserter
+	public abstract class ObjectInserter : IDisposable
 	{
 		/// <summary>An inserter that can be used for formatting and id generation only.</summary>
 		/// <remarks>An inserter that can be used for formatting and id generation only.</remarks>
@@ -421,5 +421,10 @@ namespace NGit
 		/// released after the subsequent usage.
 		/// </remarks>
 		public abstract void Release();
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 	}
 }

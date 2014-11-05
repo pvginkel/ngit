@@ -102,7 +102,7 @@ namespace NGit.Blame
 	/// the ancestor, until there are no more lines to acquire information on, or the
 	/// file's creation point is discovered in history.
 	/// </remarks>
-	public class BlameGenerator
+	public class BlameGenerator : IDisposable
 	{
 		private readonly Repository repository;
 
@@ -1113,6 +1113,11 @@ namespace NGit.Blame
 			queue = null;
 			currentSource = null;
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 
 		/// <exception cref="System.IO.IOException"></exception>
 		private bool Find(RevCommit commit, PathFilter path)

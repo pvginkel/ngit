@@ -68,7 +68,7 @@ namespace NGit
 	/// <p/>
 	/// This class is thread-safe.
 	/// </remarks>
-	public abstract class Repository
+	public abstract class Repository : IDisposable
 	{
 		private static readonly ListenerList globalListeners = new ListenerList();
 
@@ -1065,6 +1065,11 @@ namespace NGit
 				DoClose();
 			}
 		}
+
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
 
 		/// <summary>
 		/// Invoked when the use count drops to zero during

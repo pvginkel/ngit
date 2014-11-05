@@ -86,6 +86,11 @@ namespace NGit.Transport
 
 		public abstract void Close();
 
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
+
 		/// <summary>Denote the list of refs available on the remote repository.</summary>
 		/// <remarks>
 		/// Denote the list of refs available on the remote repository.

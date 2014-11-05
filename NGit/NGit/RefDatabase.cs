@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using System.Collections.Generic;
 using NGit;
 using Sharpen;
@@ -62,7 +63,7 @@ namespace NGit
 	/// <see cref="ObjectDatabase">ObjectDatabase</see>
 	/// .
 	/// </summary>
-	public abstract class RefDatabase
+	public abstract class RefDatabase : IDisposable
 	{
 		/// <summary>Order of prefixes to search when using non-absolute references.</summary>
 		/// <remarks>
@@ -110,7 +111,12 @@ namespace NGit
 
 		/// <summary>Close any resources held by this database.</summary>
 		/// <remarks>Close any resources held by this database.</remarks>
-		public abstract void Close();
+        public abstract void Close();
+
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
 
 		/// <summary>Determine if a proposed reference name overlaps with an existing one.</summary>
 		/// <remarks>

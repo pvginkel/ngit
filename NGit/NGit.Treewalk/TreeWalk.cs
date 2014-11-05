@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using NGit;
 using NGit.Errors;
 using NGit.Revwalk;
@@ -76,7 +77,7 @@ namespace NGit.Treewalk
 	/// are
 	/// permitted, even from concurrent threads.
 	/// </summary>
-	public class TreeWalk
+	public class TreeWalk : IDisposable
 	{
 		private static readonly AbstractTreeIterator[] NO_TREES = new AbstractTreeIterator
 			[] {  };
@@ -264,6 +265,11 @@ namespace NGit.Treewalk
 		{
 			reader.Release();
 		}
+
+        void IDisposable.Dispose()
+        {
+            Release();
+        }
 
 		/// <summary>Get the currently configured filter.</summary>
 		/// <remarks>Get the currently configured filter.</remarks>

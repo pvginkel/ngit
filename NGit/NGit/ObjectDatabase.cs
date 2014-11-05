@@ -41,6 +41,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+using System;
 using NGit;
 using Sharpen;
 
@@ -54,7 +55,7 @@ namespace NGit
 	/// <see cref="ObjectId">ObjectId</see>
 	/// .
 	/// </remarks>
-	public abstract class ObjectDatabase
+	public abstract class ObjectDatabase : IDisposable
 	{
 		/// <summary>Initialize a new database instance for access.</summary>
 		/// <remarks>Initialize a new database instance for access.</remarks>
@@ -113,7 +114,12 @@ namespace NGit
 
 		/// <summary>Close any resources held by this database.</summary>
 		/// <remarks>Close any resources held by this database.</remarks>
-		public abstract void Close();
+        public abstract void Close();
+
+        void IDisposable.Dispose()
+        {
+            Close();
+        }
 
 		/// <summary>
 		/// Does the requested object exist in this database?
